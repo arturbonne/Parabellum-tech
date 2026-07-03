@@ -1,3 +1,6 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +8,7 @@
 }
 
 body{
+    font-family: 'Inter';
     
     background-color: #050B18;
 }
@@ -13,7 +17,7 @@ body{
 #container{
     width:  100%;
     max-width: 1447px;
-    height: 1024px;
+    min-height: 1024px;
     margin: auto; 
 
     border: solid red;
@@ -181,8 +185,22 @@ body{
     gap: 40px;
 }
 
-.card{
+/*cards*/
+.cards{
     grid-column: 1;
     border: solid red;
-    display: flex;    
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.card h1{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.card p{
+    color: #808080;
+    font-size: 20px;    
 }
