@@ -9,7 +9,6 @@
 
 body{
     font-family: 'Inter';
-    
     background-color: #050B18;
 }
 
@@ -20,7 +19,6 @@ body{
     min-height: 1024px;
     margin: auto; 
 
-    border: solid red;
     border-radius: 40px;
     
     display: flex;
@@ -31,108 +29,62 @@ body{
 /* cabeçalho */
 .cabecalho
 {
-    background-color: #050B18;
-    border: solid rgb(255, 255, 255); 
-
-    max-height: 66px;
+    background-color: #0A101F;
+    max-height: 69px;
     width: 1447px;
-    margin:auto;
+    margin: auto;
     padding: 10px;
     gap: 5px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 24px;
 }
 
-.cabecalho p
+/* NOVO ELEMENTO ADICIONADO PARA O LOGO-GRUPO */
+.logo-grupo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-grupo img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-grupo p
 {
     color: rgb(255, 255, 255);
     font-size: 24px;
-    margin-left: 20px;
-    
 }
-
-
 
 .cabecalho button{
-    color: rgb(255, 255, 255);
     font-size: 24px;
-    border: 2px solid purple;
-    
     margin-right: 10px;
-    gap: 10px;
-    
 
+   color: none;
 }
 
-#inicioBtn{
+#inicioBtn, #serviçosBtn, #portifolioBtn, #desingBtn, #sobreBtn, #dashboardBtn, #suporteBtn, #entrarBtn {
     color: rgb(255, 255, 255);
     font-size: 24px;
-    border: 2px solid purple;
     margin-left: 20px;
-}
 
-#serviçosBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
 }
-
-#portifolioBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
-}
-
-#desingBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
-}
-
-#sobreBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
-}
-
-#dashboardBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
-}
-
-#suporteBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
-}
-
-#entrarBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    border: 2px solid purple;
-    margin-left: 20px;
-}
-
 
 /*escrita prindipal*/
 .pc{
     min-width: 635px;
     min-height: 258px;
     margin: auto;
-    gap: 40px;
-
-    border: solid red;
+    gap: 30px;
+    
     border-radius: 40px;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,29 +93,31 @@ body{
 .pc h1{
     color: #00B4D8;
     font-size: 40px;
+
+    text-align: center;
 }
 
 .pc p{
     color: #A0AEC0;
     font-size: 20px;    
+
+    text-align: center;
 }
 
 /*botões tela*/
-
 .botao_inicio{
     margin: auto;
-
+    gap: 23px;
+    
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr; 
 }
 
 #serviçoBtn{
     min-width: 201px;
     min-height: 54px;
     margin: auto;
-
-    border: solid red;
+    
     background-color: #00B4D8;
     border-radius: 40px;
 }
@@ -173,8 +127,7 @@ body{
     min-height: 54px;
     margin: auto;
     
-    border: solid red;
-    background-color: #2C2C2C;
+        background-color: #2C2C2C;
     border-radius: 40px;
 }
 
@@ -184,15 +137,15 @@ body{
     max-width: 540px;
     height: 115px;
     margin: auto;
-
-    border: solid red;
+    
     border-radius: 40px;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    gap: 20px;
+    text-align: center;
+    
+    gap:20px;
 }
 
 .meio_escritas h1{
@@ -203,61 +156,46 @@ body{
 .meio_escritas p{
     color: #A0AEC0;
     font-size: 20px;    
+    text-align: center;
 }
 
 /*cards*/
 .cards{
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-
-    justify-content: flex-start;
-    
+    gap: 20px;
 }
 
 .cards h1{
     color: #ffffff;
     font-size: 22px;
+    margin-left: 70px;  
+
+    padding: 10px;
+    
 }
 
 .cards p{
     color: #808080;
     font-size: 20px;    
+    margin-left: 20px;
+    
+    padding: 30px;
 }
 
-#card_st{
+#card_st, #card_di, #card_cl, #card_pm {
     min-width: 259px;
     min-height: 278px;
 
-    border: solid red;
-    background-color: #00B4D8;
-    opacity: 0.1;
+    background-color: rgba(0, 180, 216, 0.1); 
 }
 
-#card_di{
-    min-width: 259px;
-    min-height: 278px;
+#card_st img, #card_di img, #card_cl img, #card_pm img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
 
-    background-color: #00B4D8;
-    opacity: 0.1;
-    border: solid red;
-}
-
-#card_cl{
-    min-width: 259px;
-    min-height: 278px;
-
-    background-color: #00B4D8;
-    opacity: 0.1;
-    border: solid red;
-}
-
-#card_pm{
-    min-width: 259px;
-    min-height: 278px;
-
-    background-color: #00B4D8;
-    opacity: 0.1;
-    border: solid red;
+    background: #152445;
 }
