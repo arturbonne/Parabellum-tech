@@ -13,7 +13,7 @@ body{
 }
 
 /* Container principal */
-#container{
+.container{
     width:  100%;
     max-width: 1447px;
     min-height: 1024px;
@@ -29,7 +29,7 @@ body{
 /* cabeçalho */
 .cabecalho
 {
-    background-color: #0A101F;
+    background-color: #081129;
     max-height: 69px;
     width: 1447px;
     margin: auto;
@@ -64,19 +64,28 @@ body{
 
 .cabecalho button{
     font-size: 24px;
-    margin-right: 10px;
+    margin-right: 100px;
+    opacity: 1;
 
-   color: none;
+   background-color: #0A101F;
+   border: none;
 }
 
-#inicioBtn, #serviçosBtn, #portifolioBtn, #desingBtn, #sobreBtn, #dashboardBtn, #suporteBtn, #entrarBtn {
+#serviçosBtn, #dashboardBtn, #suporteBtn, #entrarBtn {
     color: rgb(255, 255, 255);
     font-size: 24px;
-    margin-left: 20px;
+    margin-left: 10px; 
+    background-color: none;
 
 }
 
-/*escrita prindipal*/
+#inicioBtn{
+    color:#37bcd6;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/*escrita prin  ipal*/
 .pc{
     min-width: 635px;
     min-height: 258px;
@@ -91,7 +100,7 @@ body{
 }
 
 .pc h1{
-    color: #00B4D8;
+    color: #37bcd6;
     font-size: 40px;
 
     text-align: center;
@@ -120,6 +129,7 @@ body{
     
     background-color: #00B4D8;
     border-radius: 40px;
+    border: none;
 }
 
 #portfolioBtn{
@@ -127,8 +137,9 @@ body{
     min-height: 54px;
     margin: auto;
     
-        background-color: #2C2C2C;
+    background-color: #2C2C2C;
     border-radius: 40px;
+    border: none;
 }
 
 /*escrita meio*/
@@ -199,3 +210,4 @@ body{
 
     background: #152445;
 }
+
