@@ -27,20 +27,20 @@ body{
 }
 
 /* cabeçalho */
-.cabecalho
-{
-    background-color: #081129;
-    max-height: 69px;
-    width: 1447px;
-    margin: auto;
-    padding: 10px;
-    gap: 5px;
+    .cabecalho
+    {
+        background-color: #081129;
+        max-height: 69px;
+        width: 1447px;
+        margin: auto;
+        padding: 10px;
+        gap: 5px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+    }
 
 /* NOVO ELEMENTO ADICIONADO PARA O LOGO-GRUPO */
 .logo-grupo {
@@ -204,6 +204,74 @@ body{
 #card_st img, #card_di img, #card_cl img, #card_pm img {
     width: 50px;
     height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: #152445;
+}
+
+
+
+/*Segunda Pagina*/
+
+/*Titulo*/
+.tp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 27px;
+    
+    border:solid red
+}
+
+
+
+
+/*fundos*/
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column; 
+
+    gap: 20px;
+    border: red;
+    margin:auto;
+}
+
+
+.fundo_ts, .fundo_ec{
+
+    min-width: 655px;
+    min-height: 381px;
+    gap: 20px;
+
+    border:solid red
+}
+
+.fundo_ec, .fundo_ts h1{
+    text-align: start;
+    
+    padding: 15px;
+}
+
+
+/*cards*/
+
+.lgpd, .gdpr, .pci-dss, .pci-dss, .iso{
+    border: red;
+    margin:auto;
+
+ 
+    padding: 10px;
+
+    background: #152445;
+
+} 
+
+.lgpd, .gdpr, .pci-dss, .pci-dss, .iso img{
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
