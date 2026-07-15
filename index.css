@@ -24,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 /* cabeçalho */
@@ -224,6 +225,7 @@ body{
     gap: 27px;
     
     border:solid red
+
 }
 
 
@@ -231,7 +233,8 @@ body{
 
 /*fundos*/
 
-.container2{
+
+.container_projetos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-direction: column; 
@@ -241,6 +244,19 @@ body{
     margin:auto;
 }
 
+.titulo_status {
+    display: grid;
+    grid-template-columns: auto auto;
+   justify-content: start;
+    
+    gap: 10px;
+    padding: 10px;
+}
+
+.titulo_status h {
+    font-size: 24px;
+
+}
 
 .fundo_ts, .fundo_ec{
 
@@ -257,21 +273,74 @@ body{
     padding: 15px;
 }
 
+.status-blindagem {
+    text-align: center;
+    border: solid, red;
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caixa1, .caixa2 {
+    min-width: 250px;
+    min-height: 134px;
+
+    border: solid, red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.depois, .antes {
+text-align: start;
+
+}
+
+.antes {
+    color: #E52B2B;
+    font-size: 18px;
+
+}
+
+.depois {
+    color: #22F449;
+    font-size: 18px;
+    
+}
+
+
+.caixa1, .caixa2 img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+
+.conteudo-card {
+    font-size: 13px;
+}
+
+.escritas_vd {
+        color: #22F449;
+        text-align: right;
+}
+
+.escritas_vr {
+    color: #E52B2B;
+    text-align: left;
+}
 
 /*cards*/
 
 .lgpd, .gdpr, .pci-dss, .pci-dss, .iso{
-    border: red;
-    margin:auto;
+    min-width: 259px;
+    min-height: 278px;
 
- 
-    padding: 10px;
-
-    background: #152445;
+    background-color: rgba(0, 180, 216, 0.1); 
 
 } 
 
-.lgpd, .gdpr, .pci-dss, .pci-dss, .iso img{
+.lgpd img, .gdpr img, .pci-dss img, .pci-dss img, .iso img{
+   width: 50px;
+    height: 50px;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
