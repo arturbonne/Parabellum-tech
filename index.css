@@ -223,9 +223,8 @@ body{
     text-align: center;
 
     gap: 27px;
+    padding: 20px;
     
-    border:solid red
-
 }
 
 
@@ -240,7 +239,6 @@ body{
     flex-direction: column; 
 
     gap: 20px;
-    border: red;
     margin:auto;
 }
 
@@ -260,38 +258,53 @@ body{
 
 .fundo_ts, .fundo_ec{
 
-    min-width: 655px;
-    min-height: 381px;
-    gap: 20px;
+    min-width: 755px;
+    min-height: 281px;
 
-    border:solid red
+    background-color: rgba(4, 79, 177, 0.1); 
 }
 
-.fundo_ec, .fundo_ts h1{
+.fundo_ec, .fundo_ts h{
     text-align: start;
     
-    padding: 15px;
+    
 }
 
 .status-blindagem {
     text-align: center;
-    border: solid, red;
-     display: grid;
+  
+    gap: 20px;
+
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .caixa1, .caixa2 {
     min-width: 250px;
     min-height: 134px;
-
-    border: solid, red;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
 }
 
-.depois, .antes {
+/* Removemos aquela regra antiga que tentava alinhar as imagens */
+.caixa1 img, .caixa2 img {
+    margin: 0; 
+}
+
+.caixa1 {
+    background-color: rgb(210, 46, 46);
+}
+
+.caixa2 {
+    background-color: #4abe5f;
+}
+
+.depois, .antes p{
 text-align: start;
+
 
 }
 
@@ -308,24 +321,22 @@ text-align: start;
 }
 
 
-.caixa1, .caixa2 img{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    }
-
 .conteudo-card {
-    font-size: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria as duas colunas alinhadas com o topo */
+    gap: 20px; /* Mantém o mesmo espaçamento do grid de cima */
+    padding: 10px 20px; /* Dá um distanciamento confortável das bordas */
 }
 
-.escritas_vd {
-        color: #22F449;
-        text-align: right;
-}
 
 .escritas_vr {
     color: #E52B2B;
     text-align: left;
+}
+
+.escritas_vd {
+    color: #22F449;
+    text-align: right;
 }
 
 /*cards*/
