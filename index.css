@@ -359,3 +359,171 @@ text-align: start;
     background: #152445;
 }
 
+/*Terceira Página*/
+
+/*Titulo*/
+.tp_2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 27px;
+    padding: 20px;
+
+    margin: auto;
+
+    border: red, solid;
+}
+
+.tp_2 h{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.tp_2 img{
+    width: 45px;
+    height: 47px;
+    align-self: center;
+ }
+
+ .tp_2 p{
+    color: #A0AEC0;
+    font-size: 20px;    
+    text-align: center;
+ }
+
+ /* Calculador ROI */
+
+.container_roi{
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+
+    border: #00B4D8, solid;
+}
+
+.container_roi h{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.container_calculo{
+    min-width: 788px;
+    min-height: 42px;
+    
+
+    background-color: rgba(4, 79, 177, 0.1);
+    
+    border-radius: 17px;
+    border: #00B4D8, solid;
+}
+
+.calcular {
+    background-color: #00B4D8;
+    font-size: 20px;
+    padding: 10px;
+
+    text-align: center;
+
+    margin: auto;
+
+    border-radius: 17px;
+    min-width: 642px;
+    min-height: 57px;
+}
+
+/* Cards */
+
+.cards_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+
+    min-width: 259px;
+    min-height: 278px;
+
+}
+
+.cards_3 h1{
+    color: #ffffff;
+    font-size: 22px;
+
+    text-align: center;
+
+    padding: 10px;
+}
+
+.cards_3 p{
+    color: #808080;
+    font-size: 20px;    
+    margin-left: 20px;
+    
+    text-align: center;
+    padding: 30px;
+
+}
+
+.cards_3 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: #152445;
+}
+
+/*Roda Pé*/
+
+.roda_pé{
+    min-width: 1437px;
+    min-height: 296px;
+ 
+    font: "inter";
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    
+
+    padding: 40px;
+    margin: auto;
+
+    background-color: #05283B;
+}
+
+
+.roda_pé h{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.roda_pé p{
+    color: #A0AEC0;
+    font-size: 20px;    
+}
+
+.container_link{
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+    padding: 10px;
+
+    margin: auto;
+ }
+
+ .contato{
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+    padding: 10px;
+
+    margin: auto;
+ }
