@@ -94,7 +94,6 @@ body{
 /*escrita prinipal*/
 
 .escrita_topo{
-    border: solid, red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,11 +112,9 @@ body{
 
 /* dashboard*/
 .container_dahsboard{
+    
     width: 1395px;
     height: 401px;
-
-    display: flex;
-    
 
     gap: 20px;
     padding: 20px;
@@ -127,12 +124,16 @@ body{
 }
 
 .ss{
-    flex-direction: column;
-    grid-template-columns: auto;
-   justify-content: start;
-    
+    font-size: 22px;
+
     gap: 10px;
     padding: 10px;
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .container_informativo{
@@ -143,11 +144,13 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: #05283B62;
     
 
     gap: 20px;
 
-    margin: end;
+    margin: auto;
 
     border: #22F449, solid;
 }
@@ -164,23 +167,22 @@ body{
 
 .cards_dash{
     display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    align-items: center;
-    
+    grid-template-columns: repeat(2,  1fr);
 
+    gap: 100px;
+
+}
+
+.criticas, .altas, .medias, .baixas{
 
     min-Height: 74px;
     min-width: 274px;
 
-    gap: 20px;
-    padding: 20px;
-}
-
-.criticas, .altas, .medias, .baixas{
-    border: solid, red;
-
+    border-radius: 17px;
     
-
+    
+    padding: 10px;
+    
  }
 
  .criticas h, .altas h, .medias h, .baixas h{
@@ -190,6 +192,43 @@ body{
  .criticas p, .altas p, .medias p, .baixas p{
     font-size: 18px;
  }
+
+
+.criticas {
+    background-color: #82000064;
+    border: #ff00008a, solid;
+}
+ 
+.altas {
+    background-color: #9d3c13a7;
+    border: #ce3e0091, solid;
+}
+
+.medias {
+    background-color: #94861c7b;
+    border: #94861c7c, solid;
+}
+
+.baixas {
+    background-color: #08254cba;
+    border: #00b4d89e, solid;
+}
+
+.criticas h {
+    color: #ff0606;
+}
+
+.altas h {
+    color: #ce3e00;
+}
+
+.medias h {
+    color: #ffe100;
+}
+
+.baixas h {
+    color: #00d5ff;
+}
 
  /*cards*/
 
