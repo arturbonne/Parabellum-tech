@@ -1,0 +1,179 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter';
+    background-color: #050B18;
+}
+
+/* Container principal */
+.container{
+    width:  100%;
+    max-width: 1447px;
+    min-height: 1024px;
+    margin: auto; 
+
+    border-radius: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*escrita-topo*/
+.escrita_topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px;
+}
+.escrita_topo h{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.escrita_topo p{
+    color: #A0AEC0;
+    font-size: 20px;    
+}
+
+/* cabeçalho */
+    .cabecalho
+    {
+        background-color: #081129;
+        max-height: 69px;
+        width: 1447px;
+        margin: auto;
+        padding: 10px;
+        gap: 5px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .logo-grupo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .logo-grupo img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    }
+
+    .logo-grupo p
+    {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    }
+
+    .cabecalho button{
+    font-size: 24px;
+    margin-right: 100px;
+    opacity: 1;
+
+   background-color: #0A101F;
+   border: none;
+}
+
+.inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-left: 10px; 
+    background-color: none;
+    cursor: pointer;
+
+}
+
+.serviçosBtn:hover, .inicioBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover{
+    color: #37bcd6;
+    filter: brightness(0.9);
+}
+
+.suporteBtn{
+    color:#37bcd6;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/*Cards*/
+
+.cards_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px;
+    padding: 10px;
+
+    min-width: 259px;
+    min-height: 278px;
+
+}
+
+
+.ad, .ad2, .as{
+    min-width: 259px;
+    min-height: 278px;
+
+    background-color: rgba(0, 180, 216, 0.1); 
+
+} 
+
+
+
+.cards_3 h1{
+    color: #ffffff;
+    font-size: 22px;
+
+    text-align: center;
+
+    padding: 10px;
+}
+
+.cards_3 p{
+    color: #00D4FF;
+    font-size: 20px;    
+    margin-left: 20px;
+    
+    text-align: center;
+    padding: 31px;
+
+}
+
+.cards_3 p1{
+    color: #808080;
+    font-size: 20px;    
+    margin-left: 20px;
+    
+    text-align: center;
+    padding: 31px;
+
+}
+
+.cards_3 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+
+    background: #152445;
+}
+
+
+
+ /*bugs*/
+
+/*parte da escrita card, primeira pagina, cards_3*/
