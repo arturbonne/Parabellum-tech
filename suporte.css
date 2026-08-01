@@ -27,6 +27,70 @@ body{
 
 }
 
+/* cabeçalho */
+.cabecalho
+{
+    background-color: #081129;
+    max-height: 69px;
+    width: 1447px;
+    margin: auto;
+    padding: 10px;
+    gap: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+.logo-grupo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-grupo img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-grupo p
+{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
+.cabecalho button{
+    font-size: 24px;
+    margin-right: 100px;
+    opacity: 1;
+    
+    background-color: #0A101F;
+    border: none;
+}
+
+.inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-left: 10px; 
+    background-color: none;
+    cursor: pointer;
+    
+}
+
+.serviçosBtn:hover, .inicioBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover{
+    color: #37bcd6;
+    filter: brightness(0.9);
+}
+
+.suporteBtn{
+    color:#37bcd6;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
 /*escrita-topo*/
 .escrita_topo{
     display: flex;
@@ -45,69 +109,6 @@ body{
     font-size: 20px;    
 }
 
-/* cabeçalho */
-    .cabecalho
-    {
-        background-color: #081129;
-        max-height: 69px;
-        width: 1447px;
-        margin: auto;
-        padding: 10px;
-        gap: 5px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-    }
-
-    .logo-grupo {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    gap: 10px;
-    }
-
-    .logo-grupo img{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    }
-
-    .logo-grupo p
-    {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    }
-
-    .cabecalho button{
-    font-size: 24px;
-    margin-right: 100px;
-    opacity: 1;
-
-   background-color: #0A101F;
-   border: none;
-}
-
-.inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn{
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    margin-left: 10px; 
-    background-color: none;
-    cursor: pointer;
-
-}
-
-.serviçosBtn:hover, .inicioBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover{
-    color: #37bcd6;
-    filter: brightness(0.9);
-}
-
-.suporteBtn{
-    color:#37bcd6;
-    font-size: 24px;
-    margin-left: 10px;
-}
 
 /*Cards*/
 
@@ -116,10 +117,10 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 90px;
     padding: 10px;
-
+    
     min-width: 259px;
     min-height: 278px;
-
+    
 }
 
 
@@ -178,6 +179,279 @@ body{
 
 /*parte da escrita card, primeira pagina, cards_3*/
 
+
+
 /*container menu*/
+
+.container_menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 20px;
+    padding: 10px;
+}
+
+.container_1{
+    border: solid, #09d2fb;
+    background-color: #05263453;
+ }
+
+ .container_2{
+    border: solid, #09d2fb;
+    background-color: #05263453;
+ }
+
+
+/*containeer_Abrir novo ticket*/
+
+.container_ab{
+    gap: 20px;
+    padding: 10px;
+}
+
+.container_ab h{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.container_ab img{
+    border: solid, red;
+
+}
+
+/*container botoes*/
+.container_botoes{
+    display: grid;
+    grid-template: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+ }
+
+ .container_botoes h{
+    font-size: 17px;
+    color: #ffffff;
+ }
+
+  .container_botoes h1{
+    font-size: 14px;
+    color: #ffffff;
+ }
+
+
+ .container_botoes button{
+    font-size: 17px;
+
+    background-color: #05283B;
+    border: solid #00D4FF;
+
+    min-width: 217px;
+    min-height: 46px;
+ }
+
+ .container_triplo h {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.container_triplo{
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    
+     
+    text-align: start;
+    gap: 20px;
+    margin: auto;
+    padding: 10px;
+}
+ 
+.container_triplo input{
+    font-size: 17px;
+    color: #A0AEC0;
+}
+
+.container_botoes button{
+    font-size: 17px;
+
+    min-width: 217px;
+    min-height: 46px;
+}
+
+
+.nc, .email, .resuma_o_problema { 
+    text-align: start;
+
+}
+
+
+ .container_triplo h{
+    font-size: 17px;
+
+    color: #ffffff;
+ }
+
+ .container_triplo input{
+    font-size: 16px;
+
+    padding: 10px;
+    
+
+    min-width: 488px;
+    min-height: 55px;
+    
+    border: solid #00d5ff;
+
+    color: #a2b7d1;
+    background-color: #05283bad;
+    
+ }
+
+.assunto {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 10px;
+    gap: 10px;
+}
+
+.assunto input{
+    min-width: 388px;
+    min-height: 117px;
+
+    background-color: #05283B;
+    border: solid #00D4FF;
+ }
+
+
+.enviarBtn{
+    font-size: 16px;
+    color: #ffffff; 
+    background-color: rgba(55, 187, 214, 0.896);
+
+    border: none;
+
+    margin: auto;
+
+    min-width: 488px;
+    min-height: 55px;
+
+}
+
+/*Meus tickets*/
+
+
+.container_meu_ticket{
+    text-align: start;
+    gap: 10px;
+    padding: 10px;
+
+
+}
+
+.container_meu_ticket h{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/*grid de tickets*/
+.container_tickets{
+    display: grid;
+}
+
+.container_ticket1, .container_ticket2, .container_ticket3{
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+
+    
+    gap: 10px;
+    padding: 10px;
+    margin: 20px;
+    
+    border: solid, #09d2fb;
+
+    min-width: 488px;
+    min-height: 55px;
+}
+
+.escritas_1, .escritas_2, .escritas_3{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+
+    min-width: 518px;
+    min-height: 122px;
+
+    margin: 10px;
+}
+
+.container_ticket1 h, .container_ticket2 h, .container_ticket3 h{
+    font-size: 16px;
+
+    color: #00D4FF;
+
+    text-align: start;
+    padding: 10px;
+}
+
+.container_ticket1 h1, .container_ticket2 h1, .container_ticket3 h1{
+    font-size: 16px;
+    padding: 10px;
+
+    color: #ffffff;
+    text-align: start;
+}
+
+.container_ticket1 p, .container_ticket2 p, .container_ticket3 p{
+    font-size: 18px;
+    margin: 20px, 10px;
+    padding: 20px;
+
+    color: #A0AEC0;
+
+    text-align: center;
+}
+
+.container_ticket1 p {
+    border: solid #e52b2b67;
+    border-radius: 50px;
+    background-color: #dd000038;
+
+    color: #F30000;
+}
+.container_ticket2 p {
+    border: solid #F8DF24;
+    border-radius: 50px;
+
+    background-color: #c9b30f87;
+
+    color: #ffe100;
+}
+
+.container_ticket3 p {
+    border: solid #0f98e1;
+    border-radius: 50px;
+
+    color: #237AD8;
+    background-color: #05283b80;
+}
+
+.container_ticket1 p2, .container_ticket2 p2, .container_ticket3 p2{
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+
+    color: #A0AEC0;
+    
+    text-align: start;
+}
+
+
 
 /*quando fizer, faça tentando o container em 1 só text aling no display principal*/
