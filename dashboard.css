@@ -281,8 +281,13 @@ body{
 
 /*ativade recentes*/
 
+.containers2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .caixa_at{
-    min-width: 662px;
+    min-width: 694px;
     min-height: 567px;
     
     margin: auto;   
@@ -346,37 +351,32 @@ body{
 /*documentacao*/
 
 .containers2 {
-    display: grid;
-    grid-template: 1fr 1fr;
+
     gap: 20px;
 }
 
+.containers2 h1{
+    padding: 10px;
+}
+
 .caixa_dc{
-    min-width: 518px;
-    min-height: 74px;
+min-width: 694px;
+min-height: 567px;
 
     display: grid;
+     gap: 20px;
 
     border: solid, #00B4D8;
-
-    margin: 15px;
-
 }
 
 
 .retangulo1, .retangulo2, .retangulo3, .retangulo4{
     min-width: 518px;
-    min-height: 60px;
-    
-    align-items: center;
+    min-height: 74px;
 
     border-radius: 17px;
 
-    margin: 20px;
-    
 
-    gap: 20px;
-    padding: 10px;
 }
 
 .retangulo1 img, .retangulo2 img, .retangulo3 img, .retangulo4 img{

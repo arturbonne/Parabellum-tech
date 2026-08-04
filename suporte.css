@@ -454,4 +454,201 @@ body{
 
 
 
-/*quando fizer, faça tentando o container em 1 só text aling no display principal*/
+/*2 pagina*/
+
+/*duvidas*/
+
+.contaioner_duvidas{
+    border: solid, #00B4D8;
+    background-color: #0A101F;
+
+    max-width: 11959px;
+    min-height: 516px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contaioner_duvidas h{
+    color: #00D4FF;
+    font-size: 18px;
+
+
+    text-align: start;
+
+    padding: 20px;
+}
+
+.contaioner_duvidas p{
+    color: #FFFFFF;
+    font-size: 16px;
+    
+    margin: 10px;
+
+
+    text-align: center;
+}
+
+.monitoramento, .pentest, .relatorio, .incidente{
+    min-width: 522px;
+    max-height: 122px;
+    
+    border: solid, #00B4D8;
+    border-radius: 17px;
+
+    padding: 10px;
+
+
+}
+
+
+
+/*alerta de segurança*/
+
+.alerta_segurança{
+    display: grid;
+
+    text-align: center;
+
+     min-width: 1103px;
+     min-height: 209px;
+     
+     border: solid, #ff000063;
+
+     background-color: #8c0e0e6d;
+
+     padding: 10px;
+     margin: 20px;
+}
+
+.alerta_segurança img{
+    width: 50px;
+    height: 50px;
+    
+    justify-self: center;
+}
+
+.alerta_segurança h{
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.alerta_segurança p{
+    color: #FFFFFF;
+    font-size: 16px;
+
+    padding: 10px;
+}
+
+
+.contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.numero, .email{
+
+    display: grid;
+
+    min-width: 210px;
+    min-height: 47px;
+
+    border-radius: 17px;
+}
+
+.numero {
+    background-color: #E52B2B;
+}
+
+.email {
+    background-color: #002751;
+    text-align: center;
+ }
+
+.contato p{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.contato .numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+/*Roda Pé*/
+
+.roda_pé{
+    min-width: 1437px;
+    min-height: 296px;
+ 
+    font: "inter";
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    padding: 40px;
+    gap: 20px;
+    margin: auto;
+
+    background-color: #05283B;
+}
+
+
+.roda_pé h{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.roda_pé p{
+    color: #A0AEC0;
+    font-size: 20px;    
+}
+
+.container_link{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: center;
+    padding: 10px;
+
+    margin: auto;
+ }
+
+ .container_link button{
+    border-radius: 17;
+    background: transparent;
+
+    
+    border: none;
+    font-size: 18px;          
+    cursor: pointer;
+ }
+
+ .container_link button:hover{
+    color: #316fc5;
+    filter: brightness(0.9);
+    transition: 0.3s;
+
+ }
+
+ .contato{
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+    padding: 10px;
+
+    margin: auto;
+ }
