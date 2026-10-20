@@ -363,10 +363,11 @@ body{
 min-width: 694px;
 min-height: 567px;
 
-    display: grid;
-     gap: 20px;
+display: grid;
+padding: 10px;
+gap: 20px;
+border: solid, #00B4D8;
 
-    border: solid, #00B4D8;
 }
 
 
@@ -376,13 +377,20 @@ min-height: 567px;
 
     border-radius: 17px;
 
+    display: flex;
+
+    background-color: #05283baf;
+    border: #05283b, solid;
+
 
 }
 
 .retangulo1 img, .retangulo2 img, .retangulo3 img, .retangulo4 img{
     width: 50px;
     height: 50px;
-    align-items: start;
+    align-items: center;
+
+    margin: 10px;
     
  
 }
@@ -397,15 +405,11 @@ min-height: 567px;
  .retangulo1 p, .retangulo2 p, .retangulo3 p, .retangulo4 p{
     font-size: 14px;
     color: #A0AEC0;
-    margin: 10px;
+    margin: 20px;
 
-    text-align: center;
+
  }
 
- .retangulo1, .retangulo2 , .retangulo3 , .retangulo4{
-    background-color: #05283baf;
-    border: #05283b, solid;
-}
 
 .vtd{
     display: flex;

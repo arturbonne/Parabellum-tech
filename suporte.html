@@ -4,33 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parabellum_tech</title>
-    <link rel="stylesheet" href="suporte.css">
+    <link rel="stylesheet" href="css/suporte.css">
 </head>
 <body>
-    <header>
-        <div class="cabecalho">
-           <div class="logo-grupo"> 
-                <img src="./pngs/Icon Button.svg" alt="Logo do grupo">
-                <p>Parabellum tech</p>
-            </div>
-            <button class="inicioBtn"
-                >Início
-            </button>
+        <header>
+            <nav class="cabecalho">
+                <div class="logo-grupo"> 
+                    <img src="img/Icon Button.svg" alt="Logo do grupo">
+                    <p>Parabellum tech</p>
+                </div>
+                
+                <a href="index.html" class="inicioBtn">Início</a>
+                <a href="dashboard.html" class="dashboardBtn">Dashboard</a>
+                <a href="suporte.html" class="suporteBtn">Suporte</a>
+                <a href="entrar.html" class="entrarBtn">Entrar</a>
 
-            <button class="dashboardBtn">
-                Dashboard
-            </button>
-    
-            <button class="suporteBtn"
-                >Suporte
-            </button>
-    
-            <button class="entrarBtn"
-                >Entrar
-            </button>
-    
-        </div>
-    </header>
+            </nav>
+
+        </header> 
 
     <div class="container"> 
         <section class="primeira_pagina">
@@ -66,103 +57,108 @@
         </div>
         
         <main class="container_menu">
-            
-            <div class="container_1">
-                
-                <div class="container_ab">
-                    <img src="./pngs/chat_bubble.svg">
-                    <h>Abrir Novo Ticket</h>
-                </div>
+    <!-- COLUNA DA ESQUERDA: Formulário -->
+    <div class="card_box">
+        <div class="card_header">
+            <img src="./pngs/chat_bubble.svg" alt="Ícone de chat">
+            <h2>Abrir Novo Ticket</h2>
+        </div>
 
-             <div class="container_botoes">
-                 <h>Tipo de solicitação</h>
-                    <button class="serviçosBtn">
-                     <h1>Suporte Técnico</h1>
-                    </button>
-                    
-                    <h>Prioridade</h1>
-                     <button class="prioridadeBtn">
-                            <h1>Media</h1>
-                    </button>
+        <form class="ticket_form">
+            <!-- Linha Dupla: Tipo e Prioridade -->
+            <div class="form_row_2">
+                <div class="form_group">
+                    <label>Tipo de Solicitação</label>
+                    <select class="select_field">
+                        <option>Suporte Técnico</option>
+                    </select>
                 </div>
-                    
-                    
-                    <div class="container_triplo">
-                        <h>Nome Completo</h>
-                        <div class="nc">
-                            <input type="text" placeholder="Nome Completo">
-                        </div>
-                        
-                        <h>Email</h>
-                        <div class="email">
-                            <input type="text" placeholder="Email">
-                        </div>
-                        
-                        <h>Descrição do problema</h>
-                        <div class="resuma_o_problema">
-                            <input type="text" placeholder="resuma o problema">
-                        </div>
-                    </div>
-                    
-                    <div class="assunto">
-                    <h>Assunto</h>
-                        <input type="text" placeholder="Descreva detalhadamente seu problema">
-                    </div>
-                    
-                    <button class="enviarBtn">
-                        <h>Enviar Ticket</h>
-                    </button>
-                    
-            </div>
-            
-            <div class="container_2">
-                
-                
-                <div class="container_meu_ticket">
-                    <img src="./pngs/File.svg">
-                    <h>Meus Tickets</h>
-                </div>
-                
-                <div class="container_tickets">
-                    <div class="container_ticket1">
-                        <h>#TK-2847</h>
-                        <div class="escritas_1">
-                            <h1>Atualização de certificado SSL - Atualizado</h1>
-                            <p>Alta</p>
-                            <p2> * Em andamento</p>
-                            <p2>Atualizado 2h atrás</p2>
-                        </div>
-                    </div>
-                    
-                    <div class="container_ticket2">
-                        <h>#TK-2831</h>
-                        <div class="escritas_2">
-                            <h1>Dúvida sobre relatório de pentest</h1>
-                            <p>Média</p>
-                            <p2> * Aguardando Resposta</p2>
-                            <p2>Atualizado 1d atrás</p2>
-                        </div>
-                    </div>
-                    <div class="container_ticket3">
-                        <h>#TK-2809</h>
-                        <div class="escritas_3">
-                            <h1>Solicitação de nova funcionalidade</h1>
-                            <p>Baixa</p>
-                            <p2> * Resolvido</p2>
-                            <p2>Atualizado 5d atrás</p2>
-                        </div>
-                    </div>
+                <div class="form_group">
+                    <label>Prioridade</label>
+                    <select class="select_field">
+                        <option>Média</option>
+                    </select>
                 </div>
             </div>
-            
-                
-        </main>
+
+            <div class="form_group">
+                <label>Nome Completo</label>
+                <input type="text" placeholder="Seu nome" class="input_field">
+            </div>
+
+            <div class="form_group">
+                <label>Email</label>
+                <input type="email" placeholder="seu@email.com" class="input_field">
+            </div>
+
+            <div class="form_group">
+                <input type="text" placeholder="Resuma brevemente sobre seu problema" class="input_field">
+            </div>
+
+            <div class="form_group">
+                <label>Assunto</label>
+                <textarea placeholder="Descreva detalhadamente seu problema" class="textarea_field"></textarea>
+            </div>
+
+            <button type="submit" class="submit_btn">Enviar Ticket</button>
+        </form>
+    </div>
+
+    <!-- COLUNA DA DIREITA: Meus Tickets -->
+    <div class="card_box">
+        <div class="card_header">
+            <img src="./pngs/File.svg" alt="Ícone de arquivo">
+            <h2>Meus Tickets</h2>
+        </div>
+
+        <div class="tickets_list">
+            <!-- Ticket 1 -->
+            <div class="ticket_card">
+                <div class="ticket_top">
+                    <span class="ticket_id">#TK-2847</span>
+                    <span class="badge badge_alta">Alta</span>
+                </div>
+                <h3 class="ticket_title">Atualização de certificado SSL</h3>
+                <div class="ticket_bottom">
+                    <span class="status_dot dot_yellow">• Em andamento</span>
+                    <span class="ticket_time">Atualizado 2h atrás</span>
+                </div>
+            </div>
+
+            <!-- Ticket 2 -->
+            <div class="ticket_card">
+                <div class="ticket_top">
+                    <span class="ticket_id">#TK-2831</span>
+                    <span class="badge badge_media">Média</span>
+                </div>
+                <h3 class="ticket_title">Dúvida sobre relatório de pentest</h3>
+                <div class="ticket_bottom">
+                    <span class="status_dot dot_blue">• Aguardando Resposta</span>
+                    <span class="ticket_time">Atualizado 1d atrás</span>
+                </div>
+            </div>
+
+            <!-- Ticket 3 -->
+            <div class="ticket_card">
+                <div class="ticket_top">
+                    <span class="ticket_id">#TK-2809</span>
+                    <span class="badge badge_baixa">Baixa</span>
+                </div>
+                <h3 class="ticket_title">Solicitação de nova funcionalidade</h3>
+                <div class="ticket_bottom">
+                    <span class="status_dot dot_green">• Resolvido</span>
+                    <span class="ticket_time">Atualizado 5d atrás</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
             
     </section>
 
     <section class="segunda_pagina">
         
-        <div class="contaioner_duvidas">
+        <div class="container_duvidas">
             <div class="monitoramento">
                 <h>Como funciona o monitoramento 24/7?</h>
                 <p>Nossa equipe e sistemas automatizados vigiam seu site continuamente, detectando e neutralizando ameaças em tempo real.</p>

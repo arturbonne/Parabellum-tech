@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     background-color: #050B18;
 }
 
@@ -24,24 +24,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 /* cabeçalho */
-    .cabecalho
-    {
-        background-color: #081129;
-        max-height: 69px;
-        width: 1447px;
-        margin: auto;
-        padding: 10px;
-        gap: 5px;
+.cabecalho {
+    background-color: #081129;
+    max-height: 69px;
+    width: 1447px;
+    margin: auto;
+    padding: 10px;
+    gap: 5px;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
 
 /* NOVO ELEMENTO ADICIONADO PARA O LOGO-GRUPO */
 .logo-grupo {
@@ -57,31 +55,32 @@ body{
     height: 40px;
 }
 
-.logo-grupo p
-{
+.logo-grupo p {
     color: rgb(255, 255, 255);
     font-size: 24px;
 }
 
-.cabecalho button{
+/* Alterado de '.cabecalho button' para '.cabecalho a' para refletir a semântica de links da navbar */
+.cabecalho a {
     font-size: 24px;
     margin-right: 100px;
     opacity: 1;
-
-   background-color: #0A101F;
-   border: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
 }
 
 .inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn{
     color: rgb(255, 255, 255);
     font-size: 24px;
     margin-left: 10px; 
-    background-color: none;
+    background-color: transparent;
     cursor: pointer;
-
+    text-decoration: none;
 }
 
-.serviçosBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover{
+/* Correção da classe de hover do primeiro botão da nav */
+.inicioBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover{
     color: #37bcd6;
     filter: brightness(0.9);
 }
@@ -110,17 +109,14 @@ body{
 .pc h1{
     color: #37bcd6;
     font-size: 40px;
-
     text-align: center;
 }
 
 .pc p{
     color: #A0AEC0;
     font-size: 20px;    
-
     text-align: center;
 }
-
 
 /*botões tela*/
 .botao_inicio {
@@ -136,14 +132,10 @@ body{
 .serviçoBtn {
     min-width: 201px;
     min-height: 54px;
-
     background-color: #00B4D8;
-
     border-radius: 40px;
     border: none;
-
     color: white;
-
     font-size: 18px;          
     cursor: pointer;
 }
@@ -186,7 +178,7 @@ body{
     gap:20px;
 }
 
-.meio_escritas h1{
+.meio_escritas h2{
     color: #ffffff;
     font-size: 40px;
 }
@@ -205,27 +197,24 @@ body{
     padding: 20px;
 }
 
-.cards h1{
+/* Alterado de 'h1' para as tags hierárquicas reais dos cards (h3 e h5) */
+.cards h3, .cards h5 {
     color: #ffffff;
     font-size: 22px;
     margin-left: 70px;  
-
     padding: 10px;
-    
 }
 
 .cards p{
     color: #808080;
     font-size: 20px;    
     margin-left: 20px;
-    
     padding: 30px;
 }
 
 #card_st, #card_di, #card_cl, #card_pm {
     min-width: 259px;
     min-height: 278px;
-
     background-color: rgba(0, 180, 216, 0.1); 
 }
 
@@ -235,37 +224,25 @@ body{
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
-
     background: #152445;
 }
-
-
 
 /*Segunda Pagina*/
 
 /*Titulo*/
-
 .tp{
     display: flex;
     flex-direction: column;
     text-align: center;
-
     gap: 27px;
     padding: 30px;
-    
 }
 
-
-
-
 /*fundos*/
-
-
 .container_projetos{
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-direction: column; 
-
     gap: 20px;
     margin:auto;
 }
@@ -273,36 +250,30 @@ body{
 .titulo_status {
     display: grid;
     grid-template-columns: auto auto;
-   justify-content: start;
-    
+    justify-content: start;
     gap: 10px;
     padding: 10px;
 }
 
-.titulo_status h {
+/* Correção de h (inexistente) para as tags usadas */
+.titulo_status h3, .titulo_status h4 {
     font-size: 24px;
-
 }
 
 .fundo_ts, .fundo_ec{
-
     min-width: 755px;
     min-height: 281px;
-
     background-color: rgba(4, 79, 177, 0.1); 
 }
 
-.fundo_ec, .fundo_ts h{
+/* Correção da tag fantasma h */
+.fundo_ec, .fundo_ts h3, .fundo_ts h4 {
     text-align: start;
-    
-    
 }
 
 .status-blindagem {
     text-align: center;
-  
     gap: 20px;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -312,13 +283,11 @@ body{
     min-height: 134px;
     margin: 10px;
     
-    
     display: flex;
-    justify-content: center; /* Centraliza na horizontal */
-    align-items: center;     /* Centraliza na vertical */
+    justify-content: center; 
+    align-items: center;     
 }
 
-/* Removemos aquela regra antiga que tentava alinhar as imagens */
 .caixa1 img, .caixa2 img {
     margin: 0; 
 }
@@ -332,31 +301,25 @@ body{
 }
 
 .depois, .antes p{
-text-align: start;
-
-
+    text-align: start;
 }
 
 .antes {
     color: #E52B2B;
     font-size: 18px;
-
 }
 
 .depois {
     color: #22F449;
     font-size: 18px;
-    
 }
-
 
 .conteudo-card {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Cria as duas colunas alinhadas com o topo */
-    gap: 20px; /* Mantém o mesmo espaçamento do grid de cima */
-    padding: 10px 20px; /* Dá um distanciamento confortável das bordas */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 10px 20px; 
 }
-
 
 .escritas_vr {
     color: #E52B2B;
@@ -369,23 +332,18 @@ text-align: start;
 }
 
 /*cards*/
-
 .lgpd, .gdpr, .pci-dss, .pci-dss, .iso{
     min-width: 259px;
     min-height: 278px;
-    
-
     background-color: rgba(0, 180, 216, 0.1); 
-
 } 
 
 .lgpd img, .gdpr img, .pci-dss img, .pci-dss img, .iso img{
-   width: 50px;
+    width: 50px;
     height: 50px;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
-
     background: #152445;
 }
 
@@ -396,14 +354,13 @@ text-align: start;
     display: flex;
     flex-direction: column;
     text-align: center;
-
     gap: 27px;
     padding: 30px;
-
     margin: auto;
 }
 
-.tp_2 h{
+/* Adequado para h2 do HTML */
+.tp_2 h2 {
     color: #ffffff;
     font-size: 24px;
 }
@@ -412,16 +369,15 @@ text-align: start;
     width: 45px;
     height: 47px;
     align-self: center;
- }
+}
 
- .tp_2 p{
+.tp_2 p{
     color: #A0AEC0;
     font-size: 20px;    
     text-align: center;
- }
+}
 
- /* Calculador ROI */
-
+/* Calculador ROI */
 .container_roi{
     display: grid;
     grid-template: 1fr 1fr 1fr;
@@ -429,23 +385,22 @@ text-align: start;
     padding: 20px;
     margin: 20px;
 
-    border: #00B4D8, solid;
+    /* Sintaxe de borda corrigida para evitar quebras de layout */
+    border: 1px solid #00B4D8;
 }
 
 .container_roi input{
     width: 100%;
     height: 100%;
-
     background: transparent;
     border: none;
-
     text-align: left;
     padding: 10px;
-
     outline: none;
 }
 
-.container_roi h{
+/* Substituição das tags falsas <h> pelos cabeçalhos reais que você usou no form */
+.container_roi h3, .container_roi h4, .container_roi h5 {
     color: #ffffff;
     font-size: 20px;
     margin-left: 20px;
@@ -454,12 +409,10 @@ text-align: start;
 .container_calculo{
     min-width: 788px;
     min-height: 42px;
-    
-
     background-color: rgba(4, 79, 177, 0.1);
-    
     border-radius: 17px;
-    border: #00B4D8, solid;
+    /* Sintaxe corrigida */
+    border: 1px solid #00B4D8;
 }
 
 .calcular {
@@ -467,17 +420,12 @@ text-align: start;
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
-
     text-align: center;
-
     margin: auto;
-
     border-radius: 17px;
     border: none;
-
     min-width: 642px;
     min-height: 57px;
-
     transition: 0.3s;
 }
 
@@ -485,14 +433,10 @@ text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     display: none;
-
     min-width: 642px;
-
-    border:  solid #5df196;
+    border: solid #5df196;
     border-radius: 17px;
-
     gap: 10px;
 }
 
@@ -508,37 +452,31 @@ text-align: start;
 }
 
 .calcular:hover{
-   background-color: #316fc5;
-   filter: brightness(0.9); 
+    background-color: #316fc5;
+    filter: brightness(0.9); 
 }
 
 /* Cards */
-
 .cards_3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 10px;
-
     min-width: 259px;
     min-height: 278px;
-
 }
 
 .ad, .ad2, .as{
     min-width: 259px;
     min-height: 278px;
-
     background-color: rgba(0, 180, 216, 0.1); 
-
 } 
 
-.cards_3 h1{
+/* O card_3 estava recebendo a estilização de h1 original, mas o HTML usa h6 */
+.cards_3 h6 {
     color: #ffffff;
     font-size: 22px;
-
     text-align: center;
-
     padding: 10px;
 }
 
@@ -546,10 +484,8 @@ text-align: start;
     color: #808080;
     font-size: 20px;    
     margin-left: 20px;
-    
     text-align: center;
     padding: 30px;
-
 }
 
 .cards_3 img {
@@ -558,31 +494,28 @@ text-align: start;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px;
-
     background: #152445;
 }
 
 /*Roda Pé*/
-
 .roda_pé{
     min-width: 1437px;
     min-height: 296px;
- 
-    font: "inter";
+    
+    /* Sintaxe da fonte do rodapé corrigida */
+    font-family: "Inter", sans-serif;
 
     display: flex;
     text-align: center;
     align-items: center;
-
     padding: 40px;
     gap: 20px;
     margin: auto;
-
     background-color: #05283B;
 }
 
-
-.roda_pé h{
+/* A tag base é h2, conforme consta no código HTML do footer */
+.roda_pé h2 {
     color: #ffffff;
     font-size: 22px;
 }
@@ -595,38 +528,31 @@ text-align: start;
 .container_link{
     display: flex;
     flex-direction: column;
-
     gap: 20px;
-
     text-align: center;
     padding: 10px;
-
     margin: auto;
- }
+}
 
- .container_link button{
-    border-radius: 17;
+.container_link button{
+    /* Inclusão do 'px' em medidas físicas e 'transparent' em cores */
+    border-radius: 17px;
     background: transparent;
-
-    
     border: none;
     font-size: 18px;          
     cursor: pointer;
- }
+}
 
- .container_link button:hover{
+.container_link button:hover{
     color: #316fc5;
     filter: brightness(0.9);
     transition: 0.3s;
+}
 
- }
-
- .contato{
+.contato{
     display: flex;
     flex-direction: column;
-
     text-align: right;
     padding: 10px;
-
     margin: auto;
- }
+}

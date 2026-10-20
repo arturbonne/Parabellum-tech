@@ -1,0 +1,376 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter';
+    background-color: #050B18;
+}
+
+/* Container principal */
+.container{
+    width:  100%;
+    max-width: 1447px;
+    min-height: 1024px;
+    margin: auto; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*primeira pagina*/
+.titulo{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.titulo h{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+h1{
+    color: #A0AEC0;
+    font-size: 20px;
+
+    padding:10px;
+}
+
+.titulo img{
+    width: 71px;
+    height: 63px;
+}
+
+.container_login{
+    display: grid;
+
+    background-color: #05283B;
+    border: solid #00D4FF;
+    
+    min-width: 621px;
+    min-height: 673px;
+}
+
+.entrar{
+    background-color: #00B4D8;
+        border: transparent;
+
+    
+    min-width: 418px;
+    min-height: 94px;
+
+    border-radius: 20px;
+ }
+
+
+.opçaoLogin h{
+    font-size: 24px;
+
+}
+
+.cadastrar{
+    background-color: #002751;
+
+    border: transparent;
+
+    min-width: 418px;
+    min-height: 94px;
+    
+    border-radius: 20px;
+ }
+
+.cadastrar h{
+    color: #0B4C70;
+    font-size: 24px;
+
+}
+
+/*informação*/
+
+.container_informação{
+    display: grid;
+    grid-template: 1fr 1fr;
+
+}
+
+.container_informação h{
+    color: #ffffff;
+    font-size: 24px;
+
+
+    margin: 10px;
+}
+
+.email, .senha{
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.email { 
+    min-width: 551px;
+    min-height: 65px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/Mail.svg");                                                                
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+.senha { 
+    min-width: 551px;
+    min-height: 65px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/Lock.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+
+/* AJUSTE DO INPUT: Faz ele preencher a div sem redesenhar borda/fundo */
+.email input, .senha input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    /* AFASMENTO DO TEXTO DA IMAGEM */
+    padding-left: 55px; 
+
+    color: white; 
+    font-size: 18px;
+}
+
+.email input::placeholder, .senha input::placeholder { 
+    color: white;
+}
+
+
+/* botoões*/
+
+.suporte_login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.botao_lembrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    gap: 10px;
+
+}
+
+.botao_lembrar button{
+    background-color: #808080;
+    min-width: 32px;
+    min-height: 30px;
+    
+ }
+
+ .botao_lembrar button:hover{
+    background-color: #00B4D8;
+ }
+
+.botao_esqueci {
+    display: flex;
+    justify-content: center;
+}
+
+ .botao_esqueci button {
+    border: transparent;
+    background: transparent;
+
+    font-size: 24px;
+    color: #00D4FF;
+}    
+
+.botao_esqueci button:hover{
+    color: #00B4D8;
+ }
+
+.loginBtn button{
+    display: flex;
+    
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+    
+    width: 551px;
+    height: 65px;
+
+    color: #ffffff;
+     font-size: 24px;
+
+    
+    border:transparent;
+    background-color: #00B4D8;
+    border-radius: 20px;
+ }
+
+ .loginBtn button:hover{
+    background-color: #00D4FF;
+ }
+
+ /* 2 pagina*/
+
+.container_registro{
+    display: grid;
+
+    min-width: 621px;
+    min-height: 999px;
+
+}
+
+.container_registro h{
+    color: #ffffff;
+    font-size: 24px;
+
+    margin: 10px;
+}
+
+.nmcp { 
+    min-width: 551px;
+    min-height: 65px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    margin: 10px;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/Check\ circle.svg");                                                                
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+
+.email_corporativo { 
+    min-width: 551px;
+    min-height: 65px;
+
+    margin: 10px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/File.svg");                                                                
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+
+.telefone { 
+    min-width: 551px;
+    min-height: 65px;
+
+    margin: 10px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/Phone.svg");                                                                
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+
+.empresa {
+    min-width: 551px;
+    min-height: 65px;
+
+    margin: 10px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/chat_bubble.svg");                                                                
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+
+.senha {
+    min-width: 551px;
+    min-height: 65px;
+
+    margin: 10px;
+
+    border-radius: 20px;
+    border: solid #00D4FF;
+
+    background-color: #88A8D0;
+    background-image: url("./pngs/Lock.svg");                                                                
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 12px center; /* Centraliza o ícone verticalmente */
+
+    display: flex;
+    align-items: center;
+}
+
+.nmcp input, .email_corporativo input, .telefone input, .empresa input, .senha input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    /* AFASMENTO DO TEXTO DA IMAGEM */
+    padding-left: 55px; 
+
+    color: white; 
+    font-size: 18px;
+}
+
+.nmpc input::placeholder, .email_corporativo input::placeholder, .telefone input::placeholder, .empresa input::placeholder, .senha input::placeholder {
+    color: white;
+}
+
+
+
