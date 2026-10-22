@@ -1,32 +1,28 @@
-/*fontes*/
+/* Projeto Parabellum Tech - Folha de Estilo da Página Inicial (index.css) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: #050B18;
 }
 
-/* Container principal */
-.container{
-    width:  100%;
+.container {
+    width: 100%;
     max-width: 1447px;
     min-height: 1024px;
     margin: auto; 
-
     border-radius: 40px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* cabeçalho */
 .cabecalho {
     background-color: #081129;
     max-height: 69px;
@@ -34,14 +30,12 @@ body{
     margin: auto;
     padding: 10px;
     gap: 5px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
 }
 
-/* NOVO ELEMENTO ADICIONADO PARA O LOGO-GRUPO */
 .logo-grupo {
     display: grid;
     grid-template-columns: auto auto;
@@ -49,7 +43,7 @@ body{
     gap: 10px;
 }
 
-.logo-grupo img{
+.logo-grupo img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -60,7 +54,6 @@ body{
     font-size: 24px;
 }
 
-/* Alterado de '.cabecalho button' para '.cabecalho a' para refletir a semântica de links da navbar */
 .cabecalho a {
     font-size: 24px;
     margin-right: 100px;
@@ -70,7 +63,7 @@ body{
     text-decoration: none;
 }
 
-.inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn{
+.inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn {
     color: rgb(255, 255, 255);
     font-size: 24px;
     margin-left: 10px; 
@@ -79,46 +72,41 @@ body{
     text-decoration: none;
 }
 
-/* Correção da classe de hover do primeiro botão da nav */
-.inicioBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover{
+.inicioBtn:hover, .dashboardBtn:hover, .suporteBtn:hover, .entrarBtn:hover {
     color: #37bcd6;
     filter: brightness(0.9);
 }
 
-.inicioBtn{
-    color:#37bcd6;
+.inicioBtn {
+    color: #37bcd6;
     font-size: 24px;
     margin-left: 10px;
 }
 
-/*escrita prinipal*/
-.pc{
+.pc {
     min-width: 635px;
     min-height: 258px;
     margin: auto;
     gap: 30px;
     padding: 20px;
-    
     border-radius: 40px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pc h1{
+.pc h1 {
     color: #37bcd6;
     font-size: 40px;
     text-align: center;
 }
 
-.pc p{
+.pc p {
     color: #A0AEC0;
     font-size: 20px;    
     text-align: center;
 }
 
-/*botões tela*/
 .botao_inicio {
     gap: 23px;
     display: flex;            
@@ -161,43 +149,37 @@ body{
     filter: brightness(0.9);
 }
 
-/*escrita meio*/
-.meio_escritas{
+.meio_escritas {
     width: 100%;
     max-width: 540px;
     height: 115px;
     margin: auto;
-    
     border-radius: 40px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-    gap:20px;
+    gap: 20px;
 }
 
-.meio_escritas h2{
+.meio_escritas h2 {
     color: #ffffff;
     font-size: 40px;
 }
 
-.meio_escritas p{
+.meio_escritas p {
     color: #A0AEC0;
     font-size: 20px;    
     text-align: center;
 }
 
-/*cards*/
-.cards{
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
 
-/* Alterado de 'h1' para as tags hierárquicas reais dos cards (h3 e h5) */
 .cards h3, .cards h5 {
     color: #ffffff;
     font-size: 22px;
@@ -205,7 +187,7 @@ body{
     padding: 10px;
 }
 
-.cards p{
+.cards p {
     color: #808080;
     font-size: 20px;    
     margin-left: 20px;
@@ -227,10 +209,7 @@ body{
     background: #152445;
 }
 
-/*Segunda Pagina*/
-
-/*Titulo*/
-.tp{
+.tp {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -238,13 +217,19 @@ body{
     padding: 30px;
 }
 
-/*fundos*/
-.container_projetos{
+.tp h2 {
+    color: #ffffff;
+}
+
+.tp p {
+    color: #A0AEC0;
+}
+
+.container_projetos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    flex-direction: column; 
     gap: 20px;
-    margin:auto;
+    margin: auto;
 }
 
 .titulo_status {
@@ -255,18 +240,17 @@ body{
     padding: 10px;
 }
 
-/* Correção de h (inexistente) para as tags usadas */
 .titulo_status h3, .titulo_status h4 {
+    color: #ffffff;
     font-size: 24px;
 }
 
-.fundo_ts, .fundo_ec{
+.fundo_ts, .fundo_ec {
     min-width: 755px;
     min-height: 281px;
     background-color: rgba(4, 79, 177, 0.1); 
 }
 
-/* Correção da tag fantasma h */
 .fundo_ec, .fundo_ts h3, .fundo_ts h4 {
     text-align: start;
 }
@@ -282,7 +266,6 @@ body{
     min-width: 250px;
     min-height: 134px;
     margin: 10px;
-    
     display: flex;
     justify-content: center; 
     align-items: center;     
@@ -300,7 +283,7 @@ body{
     background-color: #4abe5f;
 }
 
-.depois, .antes p{
+.depois, .antes p {
     text-align: start;
 }
 
@@ -331,14 +314,13 @@ body{
     text-align: right;
 }
 
-/*cards*/
-.lgpd, .gdpr, .pci-dss, .pci-dss, .iso{
+.lgpd, .gdpr, .pci-dss, .iso {
     min-width: 259px;
     min-height: 278px;
     background-color: rgba(0, 180, 216, 0.1); 
 } 
 
-.lgpd img, .gdpr img, .pci-dss img, .pci-dss img, .iso img{
+.lgpd img, .gdpr img, .pci-dss img, .iso img {
     width: 50px;
     height: 50px;
     margin-left: 20px;
@@ -347,10 +329,7 @@ body{
     background: #152445;
 }
 
-/*Terceira Página*/
-
-/*Titulo*/
-.tp_2{
+.tp_2 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -359,59 +338,54 @@ body{
     margin: auto;
 }
 
-/* Adequado para h2 do HTML */
 .tp_2 h2 {
     color: #ffffff;
     font-size: 24px;
 }
 
-.tp_2 img{
+.tp_2 img {
     width: 45px;
     height: 47px;
     align-self: center;
 }
 
-.tp_2 p{
+.tp_2 p {
     color: #A0AEC0;
     font-size: 20px;    
     text-align: center;
 }
 
-/* Calculador ROI */
-.container_roi{
+.container_roi {
     display: grid;
-    grid-template: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     margin: 20px;
-
-    /* Sintaxe de borda corrigida para evitar quebras de layout */
     border: 1px solid #00B4D8;
 }
 
-.container_roi input{
+.container_roi input {
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
+    color: #ffffff;
     text-align: left;
     padding: 10px;
     outline: none;
 }
 
-/* Substituição das tags falsas <h> pelos cabeçalhos reais que você usou no form */
 .container_roi h3, .container_roi h4, .container_roi h5 {
     color: #ffffff;
     font-size: 20px;
     margin-left: 20px;
 }
 
-.container_calculo{
+.container_calculo {
     min-width: 788px;
     min-height: 42px;
     background-color: rgba(4, 79, 177, 0.1);
-    border-radius: 17px;
-    /* Sintaxe corrigida */
+    border-radius: 40px;
     border: 1px solid #00B4D8;
 }
 
@@ -422,42 +396,40 @@ body{
     cursor: pointer;
     text-align: center;
     margin: auto;
-    border-radius: 17px;
+    border-radius: 40px;
     border: none;
     min-width: 642px;
     min-height: 57px;
     transition: 0.3s;
 }
 
-.resultado{
-    display: flex;
+.resultado {
     flex-direction: column;
     align-items: center;
     display: none;
     min-width: 642px;
-    border: solid #5df196;
-    border-radius: 17px;
+    border: 1px solid #5df196;
+    border-radius: 40px;
     gap: 10px;
 }
 
-.resultado p{
+.resultado p {
     color: #808080;
     font-size: 20px;
 }
 
-.resultado span{
+.resultado span {
     color: #5df196;
     font-size: 40px;
-    font-family: 'extra-bold';
+    font-weight: 800;
 }
 
-.calcular:hover{
+.calcular:hover {
     background-color: #316fc5;
     filter: brightness(0.9); 
 }
 
-/* Cards */
-.cards_3{
+.cards_3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -466,13 +438,12 @@ body{
     min-height: 278px;
 }
 
-.ad, .ad2, .as{
+.ad, .ad2, .as {
     min-width: 259px;
     min-height: 278px;
     background-color: rgba(0, 180, 216, 0.1); 
 } 
 
-/* O card_3 estava recebendo a estilização de h1 original, mas o HTML usa h6 */
 .cards_3 h6 {
     color: #ffffff;
     font-size: 22px;
@@ -480,7 +451,7 @@ body{
     padding: 10px;
 }
 
-.cards_3 p{
+.cards_3 p {
     color: #808080;
     font-size: 20px;    
     margin-left: 20px;
@@ -497,14 +468,10 @@ body{
     background: #152445;
 }
 
-/*Roda Pé*/
-.roda_pé{
+.roda_pé {
     min-width: 1437px;
     min-height: 296px;
-    
-    /* Sintaxe da fonte do rodapé corrigida */
     font-family: "Inter", sans-serif;
-
     display: flex;
     text-align: center;
     align-items: center;
@@ -514,18 +481,17 @@ body{
     background-color: #05283B;
 }
 
-/* A tag base é h2, conforme consta no código HTML do footer */
 .roda_pé h2 {
     color: #ffffff;
     font-size: 22px;
 }
 
-.roda_pé p{
+.roda_pé p {
     color: #A0AEC0;
     font-size: 20px;    
 }
 
-.container_link{
+.container_link {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -534,25 +500,29 @@ body{
     margin: auto;
 }
 
-.container_link button{
-    /* Inclusão do 'px' em medidas físicas e 'transparent' em cores */
-    border-radius: 17px;
+.container_link a {
+    border-radius: 40px;
     background: transparent;
     border: none;
     font-size: 18px;          
     cursor: pointer;
+    text-decoration: none;
 }
 
-.container_link button:hover{
+.container_link a:hover {
     color: #316fc5;
     filter: brightness(0.9);
     transition: 0.3s;
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: column;
     text-align: right;
     padding: 10px;
     margin: auto;
+}
+
+.contato h3 {
+    color: #ffffff;
 }

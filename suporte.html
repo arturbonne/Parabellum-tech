@@ -1,230 +1,216 @@
+<!-- Projeto Parabellum Tech - Página de Suporte (suporte.html) -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabellum_tech</title>
-    <link rel="stylesheet" href="css/suporte.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parabellum_tech</title>
+        <link rel="stylesheet" href="css/suporte.css">
+    </head>
+    <body>
         <header>
             <nav class="cabecalho">
-                <div class="logo-grupo"> 
+                <div class="logo-grupo">
                     <img src="img/Icon Button.svg" alt="Logo do grupo">
                     <p>Parabellum tech</p>
                 </div>
-                
+
                 <a href="index.html" class="inicioBtn">Início</a>
                 <a href="dashboard.html" class="dashboardBtn">Dashboard</a>
                 <a href="suporte.html" class="suporteBtn">Suporte</a>
                 <a href="entrar.html" class="entrarBtn">Entrar</a>
-
             </nav>
+        </header>
 
-        </header> 
-
-    <div class="container"> 
-        <section class="primeira_pagina">
-
-            <div class="escrita_topo">
-                <h>Central de Suporte</h>
-                <p>Estamos aqui para ajudar você 24/7</p>
-        </div>
-        
-        <div class="cards_3">
-                
-            <div class="ad">
-                    <img src="./pngs/Olho.svg">
-                    <h1>Email</h1>
-                    <p>suporte@parabellum.tech</p>
-                    <p1>Resposta em até 4 horas</p1>
+        <main class="container">
+            <section class="primeira_pagina">
+                <div class="escrita_topo">
+                    <h1>Central de Suporte</h1>
+                    <p>Estamos aqui para ajudar você 24/7</p>
                 </div>
-                
-                <div class="ad2">
-                    <img src="./pngs/Icon Button.svg">
-                    <h1>Telefone</h1>
-                    <p>+55 11 9999-9999</p>
-                    <p1>Seg-Sex, 9h às 18h</p1>
+
+                <section class="cards_3">
+                    <div class="ad">
+                        <img src="img/Olho.svg" alt="Ícone de Email">
+                        <h2>Email</h2>
+                        <p>suporte@parabellum.tech</p>
+                        <span>Resposta em até 4 horas</span>
+                    </div>
+
+                    <div class="ad2">
+                        <img src="img/Icon Button.svg" alt="Ícone de Telefone">
+                        <h2>Telefone</h2>
+                        <p>+55 11 9999-9999</p>
+                        <span>Seg-Sex, 9h às 18h</span>
+                    </div>
+
+                    <div class="as">
+                        <img src="img/Lock.svg" alt="Ícone de Chat ao Vivo">
+                        <h2>Chat ao Vivo</h2>
+                        <p>Disponível agora</p>
+                        <span>Resposta imediata</span>
+                    </div>
+                </section>
+
+                <section class="container_menu">
+                    <div class="card_box">
+                        <div class="card_header">
+                            <img src="img/chat_bubble.svg" alt="Ícone de chat">
+                            <h2>Abrir Novo Ticket</h2>
+                        </div>
+
+                        <form class="ticket_form">
+                            <div class="form_row_2">
+                                <div class="form_group">
+                                    <label for="tipo_solicitacao">Tipo de Solicitação</label>
+                                    <select id="tipo_solicitacao" class="select_field">
+                                        <option>Suporte Técnico</option>
+                                        <option>Falar conosco</option>
+                                        <option>Problema de segurança</option>
+                                        <option>Questões de pagamento</option>
+                                        <option>Questões de acesso</option>
+                                        <option>Outro</option>
+                                    </select>
+                                </div>
+                                <div class="form_group">
+                                    <label for="prioridade">Prioridade</label>
+                                    <select id="prioridade" class="select_field">
+                                        <option>Urgente</option>
+                                        <option>Alta</option>
+                                        <option>Média</option>
+                                        <option>Baixa</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label for="nome_completo">Nome Completo</label>
+                                <input type="text" id="nome_completo" placeholder="Seu nome" class="input_field" required>
+                            </div>
+
+                            <div class="form_group">
+                                <label for="email_suporte">Email</label>
+                                <input type="email" id="email_suporte" placeholder="seu@email.com" class="input_field" required>
+                            </div>
+
+                            <div class="form_group">
+                                <input type="text" id="resumo_problema" aria-label="Resumo do problema" placeholder="Resuma brevemente sobre seu problema" class="input_field" required>
+                            </div>
+
+                            <div class="form_group">
+                                <label for="assunto">Assunto</label>
+                                <textarea id="assunto" placeholder="Descreva detalhadamente seu problema" class="textarea_field" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit_btn">Enviar Ticket</button>
+                        </form>
+                    </div>
+
+                    <div class="card_box">
+                        <div class="card_header">
+                            <img src="img/File.svg" alt="Ícone de arquivo">
+                            <h2>Meus Tickets</h2>
+                        </div>
+
+                        <div class="tickets_list">
+                            <div class="ticket_card">
+                                <div class="ticket_top">
+                                    <span class="ticket_id">#TK-2847</span>
+                                    <span class="badge badge_alta">Alta</span>
+                                </div>
+                                <h3 class="ticket_title">Atualização de certificado SSL</h3>
+                                <div class="ticket_bottom">
+                                    <span class="status_dot dot_yellow">● Em andamento</span>
+                                    <span class="ticket_time">Atualizado 2h atrás</span>
+                                </div>
+                            </div>
+
+                            <div class="ticket_card">
+                                <div class="ticket_top">
+                                    <span class="ticket_id">#TK-2831</span>
+                                    <span class="badge badge_media">Média</span>
+                                </div>
+                                <h3 class="ticket_title">Dúvida sobre relatório de pentest</h3>
+                                <div class="ticket_bottom">
+                                    <span class="status_dot dot_blue">● Aguardando Resposta</span>
+                                    <span class="ticket_time">Atualizado 1d atrás</span>
+                                </div>
+                            </div>
+
+                            <div class="ticket_card">
+                                <div class="ticket_top">
+                                    <span class="ticket_id">#TK-2809</span>
+                                    <span class="badge badge_baixa">Baixa</span>
+                                </div>
+                                <h3 class="ticket_title">Solicitação de nova funcionalidade</h3>
+                                <div class="ticket_bottom">
+                                    <span class="status_dot dot_green">● Resolvido</span>
+                                    <span class="ticket_time">Atualizado 5d atrás</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="segunda_pagina">
+                <div class="container_duvidas">
+                    <div class="monitoramento">
+                        <h3>Como funciona o monitoramento 24/7?</h3>
+                        <p>Nossa equipe e sistemas automatizados vigiam seu site continuamente, detectando e neutralizando ameaças em tempo real.</p>
+                    </div>
+
+                    <div class="pentest">
+                        <h3>O que é incluído no Pentest mensal?</h3>
+                        <p>Testes de invasão simulados seguindo metodologia OWASP, incluindo análise de vulnerabilidades, exploração controlada e relatório detalhado.</p>
+                    </div>
+
+                    <div class="relatorio">
+                        <h3>Como posso acessar os relatórios de segurança?</h3>
+                        <p>Todos os relatórios estão disponíveis no Dashboard, na seção 'Documentação Técnica', com download em PDF.</p>
+                    </div>
+
+                    <div class="incidente">
+                        <h3>Quanto tempo leva para resolver um incidente crítico?</h3>
+                        <p>Incidentes críticos têm SLA de 1 hora para primeira resposta e 4 horas para resolução completa.</p>
+                    </div>
                 </div>
-                
-                <div class="as">
-                    <img src="./pngs/Lock.svg">
-                    <h1>Chat ao Vivo</h1>
-                    <p>Disponível agora</p>
-                    <p1>Resposta imediata</p1>
+
+                <div class="alerta_segurança">
+                    <img src="img/Alert circle.svg" alt="Ícone de Alerta Crítico">
+                    <h3>Incidente Crítico de Segurança?</h3>
+                    <p>Para emergências de segurança, entre em contato imediatamente:</p>
+
+                    <div class="contato">
+                        <div class="numero">
+                            <p>Ligar: +55 11 9999-9999</p>
+                        </div>
+                        <div class="email">
+                            <p>Email: emergencia@parabellum.tech</p>
+                        </div>
+                    </div>
                 </div>
-            
-        </div>
-        
-        <main class="container_menu">
-    <!-- COLUNA DA ESQUERDA: Formulário -->
-    <div class="card_box">
-        <div class="card_header">
-            <img src="./pngs/chat_bubble.svg" alt="Ícone de chat">
-            <h2>Abrir Novo Ticket</h2>
-        </div>
+            </section>
+        </main>
 
-        <form class="ticket_form">
-            <!-- Linha Dupla: Tipo e Prioridade -->
-            <div class="form_row_2">
-                <div class="form_group">
-                    <label>Tipo de Solicitação</label>
-                    <select class="select_field">
-                        <option>Suporte Técnico</option>
-                    </select>
-                </div>
-                <div class="form_group">
-                    <label>Prioridade</label>
-                    <select class="select_field">
-                        <option>Média</option>
-                    </select>
-                </div>
+        <footer class="roda_pé">
+            <h2>Proteção digital de ponta a ponta. Transformamos sua presença online
+                <br>
+                em uma fortaleza impenetrável com design excepcional.
+            </h2>
+            <div class="container_link">
+                <a href="index.html" class="inicioBtn">Início</a>
+                <a href="dashboard.html" class="dashboardBtn">Dashboard</a>
+                <a href="suporte.html" class="suporteBtn">Suporte</a>
+                <a href="entrar.html" class="entrarBtn">Entrar</a>
             </div>
-
-            <div class="form_group">
-                <label>Nome Completo</label>
-                <input type="text" placeholder="Seu nome" class="input_field">
-            </div>
-
-            <div class="form_group">
-                <label>Email</label>
-                <input type="email" placeholder="seu@email.com" class="input_field">
-            </div>
-
-            <div class="form_group">
-                <input type="text" placeholder="Resuma brevemente sobre seu problema" class="input_field">
-            </div>
-
-            <div class="form_group">
-                <label>Assunto</label>
-                <textarea placeholder="Descreva detalhadamente seu problema" class="textarea_field"></textarea>
-            </div>
-
-            <button type="submit" class="submit_btn">Enviar Ticket</button>
-        </form>
-    </div>
-
-    <!-- COLUNA DA DIREITA: Meus Tickets -->
-    <div class="card_box">
-        <div class="card_header">
-            <img src="./pngs/File.svg" alt="Ícone de arquivo">
-            <h2>Meus Tickets</h2>
-        </div>
-
-        <div class="tickets_list">
-            <!-- Ticket 1 -->
-            <div class="ticket_card">
-                <div class="ticket_top">
-                    <span class="ticket_id">#TK-2847</span>
-                    <span class="badge badge_alta">Alta</span>
-                </div>
-                <h3 class="ticket_title">Atualização de certificado SSL</h3>
-                <div class="ticket_bottom">
-                    <span class="status_dot dot_yellow">• Em andamento</span>
-                    <span class="ticket_time">Atualizado 2h atrás</span>
-                </div>
-            </div>
-
-            <!-- Ticket 2 -->
-            <div class="ticket_card">
-                <div class="ticket_top">
-                    <span class="ticket_id">#TK-2831</span>
-                    <span class="badge badge_media">Média</span>
-                </div>
-                <h3 class="ticket_title">Dúvida sobre relatório de pentest</h3>
-                <div class="ticket_bottom">
-                    <span class="status_dot dot_blue">• Aguardando Resposta</span>
-                    <span class="ticket_time">Atualizado 1d atrás</span>
-                </div>
-            </div>
-
-            <!-- Ticket 3 -->
-            <div class="ticket_card">
-                <div class="ticket_top">
-                    <span class="ticket_id">#TK-2809</span>
-                    <span class="badge badge_baixa">Baixa</span>
-                </div>
-                <h3 class="ticket_title">Solicitação de nova funcionalidade</h3>
-                <div class="ticket_bottom">
-                    <span class="status_dot dot_green">• Resolvido</span>
-                    <span class="ticket_time">Atualizado 5d atrás</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-            
-    </section>
-
-    <section class="segunda_pagina">
-        
-        <div class="container_duvidas">
-            <div class="monitoramento">
-                <h>Como funciona o monitoramento 24/7?</h>
-                <p>Nossa equipe e sistemas automatizados vigiam seu site continuamente, detectando e neutralizando ameaças em tempo real.</p>
-            </div>
-
-            <div class="pentest">
-                <h>O que é incluído no Pentest mensal?</h>
-                <p>Testes de invasão simulados seguindo metodologia OWASP, incluindo análise de vulnerabilidades, exploração controlada e relatório detalhado.</p>
-            </div>
-
-            <div class="relatorio">
-                <h>Como posso acessar os relatórios de segurança?</h>
-                <p>Todos os relatórios estão disponíveis no Dashboard, na seção 'Documentação Técnica', com download em PDF.</p>
-            </div>
-
-            <div class="incidente">
-                <h>Quanto tempo leva para resolver um incidente crítico?</h>
-                <p>Incidentes críticos têm SLA de 1 hora para primeira resposta e 4 horas para resolução completa.</p>
-            </div>
-
-        </div>
-
-        <div class="alerta_segurança">
-            <img src="./pngs/Alert circle.svg">
-            <h>Incidente Crítico de Segurança?</h>
-            <p>Para emergências de segurança, entre em contato imediatamente:</p>
-            
             <div class="contato">
-                <div class="numero">
-                    <p>Ligar: +55 11 9999-9999</p>
-                </div>
-
-                <div class="email">
-                    <p>Email: emergencia@parabellum.tech</p>
-                </div>
-            </div>
-
-        </div>
-
-         <footer class = "roda_pé">
-                <h>Proteção digital de ponta a ponta. Transformamos sua presença online
-                    <br> 
-                    em uma fortaleza impenetrável com design excepcional.</h>
-                    <div class = "container_link">
-                        <h>Links</h>
-                        <button class="inicioBtn"
-                        >Início
-                    </button>
-                    
-                <button class="dashboardBtn">
-                    Dashboard
-                </button>
-        
-                <button class="suporteBtn"
-                    >Suporte
-                </button>
-             </div>
-             <div class = "contato">
-                <h>Contato</h>
+                <h3>Contato</h3>
                 <br>
                 <p>contato@parabellum.tech</p>
                 <br>
                 <p>+55 (11) 9988-7766</p>
+            </div>
         </footer>
-
-    </section>
-        </div>
     </body>
-    </html>
+</html>

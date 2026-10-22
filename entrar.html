@@ -1,57 +1,61 @@
+<!-- Projeto Parabellum Tech - Página de Login (entrar.html) -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabellum_tech</title>
-    <link rel="stylesheet" href="css/entrar.css">
-</head>
-<body>
-    <div class="container">
-        <div class="titulo">
-            <img src="./pngs/Shield2.svg">
-            <h>Parabellum Tech</h>
-        </div>
-        <h1>Portal do Cliente - Acesso Seguro</h1>
-
-
-        <div class="container_login">
-            <div class="opçaoLogin">
-                <button class="entrar">
-                    <h>Entrar</h>
-                </button>
-
-                <button class="cadastrar"> 
-                    <h>Registrar</h>
-                </button>
-        </div>
-
-        <div class="container_informação">
-            <h>Email</h>
-            <div class="email">
-                <input type="text" placeholder="Email">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parabellum_tech</title>
+        <link rel="stylesheet" href="css/entrar.css">
+    </head>
+    <body>
+        <main class="container">
+            <button type="button" id="voltar_btn">
+            <img src="img/arrow_back.svg">
+            </button>
+            <div class="titulo">
+                <img src="img/Shield2.svg" alt="Escudo Parabellum Tech">
+                <h2>Parabellum Tech</h2>
             </div>
 
-            <h>Senha</h>
-            <div class="senha">
-                <input type="password" placeholder="Senha">
-            </div>
-        </div>
+            <h1>Portal do Cliente - Acesso Seguro</h1>
 
-        <div class="suporte_login">
-            <div class="botao_lembrar">
-                <button></button>
-                <h>Lembrar-me</h>
-            </div>
-            <div class="botao_esqueci">
-                <button>Esqueci minha senha</button>
-            </div>
-        </div>
+            <section class="container_login">
+                <div class="opçaoLogin">
+                    <button type="button" class="entrar">
+                        <span>Entrar</span>
+                    </button>
+                    <button type="button" class="cadastrar">
+                        <span>Registrar</span>
+                    </button>
+                </div>
 
-        <div class="loginBtn">
-            <button> Entrar com segurança</button>
-        </div>
+                <form class="container_informaçao">
+                    <label for="email_login">Email</label>
+                    <div class="email">
+                        <input type="email" id="email_login" placeholder="Email" required>
+                    </div>
 
-</div>
+                    <label for="senha_login">Senha</label>
+                    <div class="senha">
+                        <input type="password" id="senha_login" placeholder="Senha" required>
+                    </div>
+                </form>
+
+                <div class="suporte_login">
+                    <div class="botao_lembrar">
+                        <button type="button" aria-label="Lembrar-me"></button>
+                        <span>Lembrar-me</span>
+                    </div>
+
+                    <div class="botao_esqueci">
+                        <button type="button">Esqueci minha senha</button>
+                    </div>
+                </div>
+
+                <div class="loginBtn">
+                    <button type="button">Entrar com segurança</button>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
-</body>

@@ -1,72 +1,78 @@
+<!-- Projeto Parabellum Tech - Página de Registro (entrar2.html) -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabellum_tech</title>
-    <link rel="stylesheet" href="css/entrar.css">
-</head>
-<body>
-    <div class="container">
-        <div class="titulo">
-            <img src="./pngs/Shield2.svg">
-            <h>Parabellum Tech</h>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parabellum_tech</title>
+        <link rel="stylesheet" href="css/entrar.css">
+    </head>
+    <body>
+        <main class="container">
+            <button type="button" id="voltar_btn">
+                <img src="img/arrow_back.svg">
+            </button>
 
-        <h1>Portal do Cliente - Acesso Seguro</h1>
-
-        <div class="container_login">
-            <div class="opçaoLogin">
-                <button class="entrar">
-                    <h>Entrar</h>
-                </button>
-
-                <button class="cadastrar"> 
-                    <h>Registrar</h>
-                </button>
-        </div>
-
-        <div class="container_registro">
-            <h>Nome Completo</h>
-            <div class="nmcp">
-                <input type="text" placeholder="Nome Completo">
+            <div class="titulo">
+                <img src="img/Shield2.svg" alt="Escudo Parabellum Tech">
+                <h2>Parabellum Tech</h2>
             </div>
 
-                <h>Email Corporativo</h>
-                <div class="email_corporativo">
-                    <input type="text" placeholder="Email Corporativo">
+            <h1>Portal do Cliente - Acesso Seguro</h1>
+
+            <section class="container_login">
+                <div class="opçaoLogin">
+                    <button type="button" class="entrar">
+                        <span>Entrar</span>
+                    </button>
+                    <button type="button" class="cadastrar">
+                        <span>Registrar</span>
+                    </button>
                 </div>
 
-                    <h>Telefone Corporativo</h>
-                    <div class="telefone">
-                        <input type="password" placeholder="419999999-67">
+                <form class="container_registro">
+                    <label for="nome_completo">Nome Completo</label>
+                    <div class="nmcp">
+                        <input type="text" id="nome_completo" placeholder="Nome Completo" required>
                     </div>
 
-                <h>Empresa</h>
-                <div class="empresa">
-                    <input type="text" placeholder="Nome da empresa">
-                </div>
-                
-                <h>Senha</h>
-                <div class="senha">
-                    <input type="password" placeholder="Senha">
-                </div>
+                    <label for="email_corporativo">Email Corporativo</label>
+                    <div class="email_corporativo">
+                        <input type="email" id="email_corporativo" placeholder="Email Corporativo" required>
+                    </div>
 
-                <h>Confirmar Senha</h>
-                <div class="senha">
-                    <input type="password" placeholder="Confirmar Senha">
-                </div>  
+                    <label for="telefone_corporativo">Telefone Corporativo</label>
+                    <div class="telefone">
+                        <input type="tel" id="telefone_corporativo" placeholder="419999999-67" required>
+                    </div>
 
-        <div class="botao_ termos">
-            <button class="termos"></button>
-            <h>Concordo com os Termos de Uso e Política de Privacidade</h>
-        </div>
+                    <label for="nome_empresa">Empresa</label>
+                    <div class="empresa">
+                        <input type="text" id="nome_empresa" placeholder="Nome da empresa" required>
+                    </div>
 
-        <button class="loginBtn">
-            <h>Entrar com segurança</h>
-        </button>
+                    <label for="senha_registro">Senha</label>
+                    <div class="senha">
+                        <input type="password" id="senha_registro" placeholder="Senha" required>
+                    </div>
 
-        </div>
+                    <label for="confirmar_senha">Confirmar Senha</label>
+                    <div class="senha">
+                        <input type="password" id="confirmar_senha" placeholder="Confirmar Senha" required>
+                    </div>
 
-</div>        
-</body>
+                    <div class="botao_termos">
+                        <button type="button" class="termos" aria-label="Aceitar termos"></button>
+                        <span>Concordo com os Termos de Uso e Política de Privacidade</span>
+                    </div>
+
+                    <div class="loginBtn">
+                        <button type="button">
+                            <span>Entrar com segurança</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

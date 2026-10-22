@@ -1,195 +1,176 @@
+<!-- Projeto Parabellum Tech - Página de Dashboard (dashboard.html) -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabellum_tech</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parabellum_tech</title>
+        <link rel="stylesheet" href="css/dashboard.css">
+    </head>
+    <body>
         <header>
             <nav class="cabecalho">
-                <div class="logo-grupo"> 
+                <div class="logo-grupo">
                     <img src="img/Icon Button.svg" alt="Logo do grupo">
                     <p>Parabellum tech</p>
                 </div>
-                
+
                 <a href="index.html" class="inicioBtn">Início</a>
                 <a href="dashboard.html" class="dashboardBtn">Dashboard</a>
                 <a href="suporte.html" class="suporteBtn">Suporte</a>
                 <a href="entrar.html" class="entrarBtn">Entrar</a>
-
             </nav>
+        </header>
 
-        </header> 
-
-    <div class="container">
-    <section class="primeira_pagina">
-
-        <div class="escrita_topo">
-            <h>Dashboard de Segurança</h>
-            <p>Visão geral do status de proteção em tempo real</p>
-        </div>
-
-        <div class="container_dahsboard">
-            <div class="ss">
-                <h>Status do sistema</h>
-            </div>
-
-            <div class="alinhamento">
-                
-                <div class="container_informativo">
-                    <img src="./pngs/Green_shild.svg">
-                    <h>Seguro</h>
-                    <p>Sistema protegido e funcionando</p>
+        <main class="container">
+            <section class="primeira_pagina">
+                <div class="escrita_topo">
+                    <h1>Dashboard de Segurança</h1>
+                    <p>Visão geral do status de proteção em tempo real</p>
                 </div>
-                
-                <div class="cards_dash">
-                    
-                    <div class="criticas">
-                        <h>0</h>
-                        <p>Criticas</p>
+
+                <div class="container_dahsboard">
+                    <div class="ss">
+                        <h2>Status do sistema</h2>
                     </div>
-                    
-                    <div class="altas">
-                        <h>0</h>
-                        <p>Altas</p>
-                    </div>
-                    
-                    <div class="medias">
-                        <h>0</h>
-                        <p>Médias</p>
-                    </div>
-                    
-                    <div class="baixas">
-                        <h>0</h>
-                        <p>Baixas</p>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </div>
-            <div class="cards">
-                
-                <div class="card1">
-                    <img src="./pngs/Check circle.svg">
-                    <h1>247</h1>
-                    <p>Requisições Bloqueadas</p>
-                </div>
-                
-                <div class="card2">
-                    <img src="./pngs/Check circle.svg">
-                    <h1>124ms</h1>
-                    <p>Tempo Médio de Respostas</p>
-                </div>
-                
-                <div class="card3">
-                    <img src="./pngs/Check circle.svg">
-                    <h1>3.8%</h1>
-                    <p>Taxa de Conversão</p>
-                </div>
-                
-                <div class="card4">
-                    <img src="./pngs/Check circle.svg">
-                    <h1>PCI-DSS</h1>
-                    <p>Usuários Ativos</p>
-                </div>
-            </div>
-        </section> 
-       
-        <section class="segunda_pagina">
-                    <div class="containers2">
 
-            <div class="caixa_at">
-                
-                <h1>Atividades Recentes</h1>
-                
-                <div class="caixa_verde">
-                    <h>Varredura de segurança concluída</h>
-                    <p>2h atrás</p>
+                    <div class="alinhamento">
+                        <div class="container_informativo">
+                            <img src="img/Green_shild.svg" alt="Escudo de sistema seguro">
+                            <h3>Seguro</h3>
+                            <p>Sistema protegido e funcionando</p>
+                        </div>
+
+                        <div class="cards_dash">
+                            <div class="criticas">
+                                <h3>0</h3>
+                                <p>Críticas</p>
+                            </div>
+
+                            <div class="altas">
+                                <h3>0</h3>
+                                <p>Altas</p>
+                            </div>
+
+                            <div class="medias">
+                                <h3>0</h3>
+                                <p>Médias</p>
+                            </div>
+
+                            <div class="baixas">
+                                <h3>0</h3>
+                                <p>Baixas</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="caixa_amarela">
-                    <h>Tentativa de SQL Injection bloqueada</h>
-                    <p>5h atrás</p>
+
+                <section class="cards">
+                    <div class="card1">
+                        <img src="img/Check circle.svg" alt="Ícone Requisições Bloqueadas">
+                        <h3>247</h3>
+                        <p>Requisições Bloqueadas</p>
+                    </div>
+
+                    <div class="card2">
+                        <img src="img/Check circle.svg" alt="Ícone Tempo Médio de Respostas">
+                        <h3>124ms</h3>
+                        <p>Tempo Médio de Respostas</p>
+                    </div>
+
+                    <div class="card3">
+                        <img src="img/Check circle.svg" alt="Ícone Taxa de Conversão">
+                        <h3>3.8%</h3>
+                        <p>Taxa de Conversão</p>
+                    </div>
+
+                    <div class="card4">
+                        <img src="img/Check circle.svg" alt="Ícone PCI-DSS">
+                        <h3>PCI-DSS</h3>
+                        <p>Usuários Ativos</p>
+                    </div>
+                </section>
+            </section>
+
+            <section class="segunda_pagina">
+                <div class="containers2">
+                    <div class="caixa_at">
+                        <h2>Atividades Recentes</h2>
+
+                        <div class="caixa_verde">
+                            <h3>Varredura de segurança concluída</h3>
+                            <p>2h atrás</p>
+                        </div>
+
+                        <div class="caixa_amarela">
+                            <h3>Tentativa de SQL Injection bloqueada</h3>
+                            <p>5h atrás</p>
+                        </div>
+
+                        <div class="caixa_azul">
+                            <h3>Backup automático realizado</h3>
+                            <p>12h atrás</p>
+                        </div>
+
+                        <div class="caixa_roxa">
+                            <h3>Certificado SSL renovado</h3>
+                            <p>1 dia atrás</p>
+                        </div>
+                    </div>
+
+                    <div class="caixa_dc">
+                        <h2>Documentos Técnicos</h2>
+
+                        <div class="retangulo1">
+                            <img src="img/File.svg" alt="Ícone de arquivo">
+                            <h3>Relatório Pentest - Março 2026</h3>
+                            <p>2.4 MB 15/03/2026</p>
+                        </div>
+
+                        <div class="retangulo2">
+                            <img src="img/File.svg" alt="Ícone de arquivo">
+                            <h3>Arquitetura de Segurança</h3>
+                            <p>1.8 MB 10/03/2026</p>
+                        </div>
+
+                        <div class="retangulo3">
+                            <img src="img/File.svg" alt="Ícone de arquivo">
+                            <h3>Política de Privacidade LGPD</h3>
+                            <p>890 KB 05/03/2026</p>
+                        </div>
+
+                        <div class="retangulo4">
+                            <img src="img/File.svg" alt="Ícone de arquivo">
+                            <h3>Documentação Técnica API</h3>
+                            <p>1.2 MB 02/01/2026</p>
+                        </div>
+
+                        <div class="vtd">
+                            <button type="button" class="vtdBtn">Ver Todos os Documentos</button>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="caixa_azul">
-                    <h>Backup automático realizado</h>
-                    <p>12h atrás </p>
-                </div>
-                
-                <div class="caixa_roxa">
-                    <h>Certificado SSL renovado</h>
-                    <p>1 dia atrás</p>
-                </div>
-                
+            </section>
+        </main>
+
+        <footer class="roda_pé">
+            <h2>Proteção digital de ponta a ponta. Transformamos sua presença online
+                <br>
+                em uma fortaleza impenetrável com design excepcional.
+            </h2>
+            <div class="container_link">
+                <a href="index.html" class="inicioBtn">Início</a>
+                <a href="dashboard.html" class="dashboardBtn">Dashboard</a>
+                <a href="suporte.html" class="suporteBtn">Suporte</a>
+                <a href="entrar.html" class="entrarBtn">Entrar</a>
             </div>
-            
-            <div class="caixa_dc">
-                <h1>Documentos Técnicos</h1>
-                
-                <div class="retangulo1">
-                    <img src="./pngs/File.svg">
-                    <h>Relatório Pentest - Março 2026</h>
-                    <p>2.4 MB • 15/03/2026</p>
-                </div>
-                
-                <div class="retangulo2">
-                    <img src="./pngs/File.svg">
-                    <h>Arquitetura de Segurança</h>
-                    <p>1.8 MB • 10/03/2026</p>
-                </div>
-                
-                <div class="retangulo3">
-                    <img src="./pngs/File.svg">
-                    <h>Política de Privacidade LGPD</h>
-                    <p>890 KB • 05/03/2026</p>
-                </div>
-                
-                <div class="retangulo4">
-                    <img src="./pngs/File.svg">
-                    <h>Documentação Técnica API</h>
-                    <p>1.2 MB • 02/01/2026</p>
-                </div>
-                
-                <div class="vtd">
-                    <button class="vtdBtn">Ver Todos os Documentos</button>
-                </div>
-                
-            </div>
-            
-        </div>
-            
-            <footer class = "roda_pé">
-                <h>Proteção digital de ponta a ponta. Transformamos sua presença online
-                    <br> 
-                    em uma fortaleza impenetrável com design excepcional.</h>
-                    <div class = "container_link">
-                        <h>Links</h>
-                        <button class="inicioBtn"
-                        >Início
-                    </button>
-                    
-                <button class="dashboardBtn">
-                    Dashboard
-                </button>
-        
-                <button class="suporteBtn"
-                    >Suporte
-                </button>
-             </div>
-             <div class = "contato">
-                <h>Contato</h>
+            <div class="contato">
+                <h3>Contato</h3>
                 <br>
                 <p>contato@parabellum.tech</p>
                 <br>
                 <p>+55 (11) 9988-7766</p>
+            </div>
         </footer>
-
-        </section>
-
-</div> 
-</body>
+    </body>
 </html>
