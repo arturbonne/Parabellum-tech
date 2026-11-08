@@ -1,4 +1,4 @@
-    /* Projeto Parabellum Tech - Folha de Estilo da Página Inicial (index.css) */
+    /* Projeto Parabellum Tech - Folha de Estilo da Página pagamento (pagamento.css) */
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
     * {
@@ -236,11 +236,7 @@
         object-fit: contain;
         margin: auto;
     }
-
-
-
-
-
+    
     .roda_pe {
         width: 100%;
         min-height: 296px;

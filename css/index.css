@@ -144,7 +144,7 @@ body {
     margin-bottom: 50px;      
 }
 
-.serviçoBtn {
+.servicoBtn {
     min-width: 201px;
     min-height: 54px;
     background-color: #00B4D8;
@@ -155,7 +155,7 @@ body {
     cursor: pointer;
 }
 
-.serviçoBtn:hover {
+.servicoBtn:hover {
     background-color: #316fc5;
     filter: brightness(0.9);
 }

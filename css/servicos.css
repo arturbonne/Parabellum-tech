@@ -1,4 +1,4 @@
-/* Projeto Parabellum Tech - Folha de Estilo da Página Inicial (index.css) */
+/* Projeto Parabellum Tech - Folha de Estilo da Página serviços (servicos.css) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -122,7 +122,6 @@ h1 {
 
     text-align: center;
     margin: 10px;
-
 }
 
 .cards {
@@ -157,8 +156,6 @@ h1 {
 
     color: white;
 }
-
-
 
 ul{
     margin: 20px 30px;
@@ -372,12 +369,12 @@ ul{
     }
 
     .cards {
-        grid-template-columns: 1fr; /* Transforma em 1 coluna no celular */
+        grid-template-columns: 1fr;
     }
 
     .botao_alternar {
-        grid-template-columns: 1fr; /* Empilha os botões Protegido/Vulnerável */
-        height: auto; /* Permite que a caixa cresça para baixo */
+        grid-template-columns: 1fr;
+        height: auto;
         gap: 10px;
     }
 

@@ -1,4 +1,4 @@
-/* Projeto Parabellum Tech - Folha de Estilo da Página Inicial (index.css) */
+/* Projeto Parabellum Tech - Folha de Estilo da Página dashboard (dashboard.css) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -485,12 +485,12 @@ body {
         grid-template-columns: 1fr 1fr; 
     }
     
-    .cards_3 {
-        grid-template-columns: 1fr 1fr; 
-    }
-
-    .container_projetos {
+    .containers2 {
         grid-template-columns: 1fr; 
+    }
+    
+    .retangulo1 p, .retangulo2 p, .retangulo3 p, .retangulo4 p {
+        margin-left: 10px;
     }
 }
 
@@ -499,40 +499,40 @@ body {
         flex-direction: column; 
         text-align: center;
         gap: 15px;
+        height: auto;
     }
     
-    .cabecalho a, .inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn {
+    .cabecalho a, .inicioBtn, .dashboardBtn, .suporteBtn, .planosBtn, .servicosBtn, .sobreBtn, .midiasBtn, .entrarBtn {
         margin: 5px 0;
         font-size: 20px;
+        display: block;
     }
     
     .logo-grupo {
         margin-bottom: 15px;
     }
 
-    .cards, .cards_3 {
-        grid-template-columns: 1fr; 
-    }
-
-    .status-blindagem {
-        grid-template-columns: 1fr; 
-    }
-
-    .conteudo-card {
+    .cards_dash {
         grid-template-columns: 1fr;
-        text-align: center;
+        gap: 20px;
     }
-    
-    .escritas_vr, .escritas_vd {
+
+    .cards {
+        grid-template-columns: 1fr; 
+    }
+
+    .caixa_verde, .caixa_amarela, .caixa_azul, .caixa_roxa,
+    .retangulo1, .retangulo2, .retangulo3, .retangulo4 {
+        flex-direction: column;
         text-align: center;
     }
 
-    .pc h1 {
-        font-size: 32px;
+    .retangulo1 img, .retangulo2 img, .retangulo3 img, .retangulo4 img {
+        margin: 10px auto;
     }
 
-    .meio_escritas h2 {
-        font-size: 32px;
+    .retangulo1 p, .retangulo2 p, .retangulo3 p, .retangulo4 p {
+        margin: 10px 0;
     }
 
     .roda_pe {

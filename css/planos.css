@@ -1,4 +1,4 @@
-/* Projeto Parabellum Tech - Folha de Estilo da Página Inicial (index.css) */
+/* Projeto Parabellum Tech - Folha de Estilo da Página planos (planos.css) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
@@ -176,8 +176,52 @@ body {
     background-color: #00B4D8;
 }
 
+#tabela_planos {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow-x: auto;
+
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(4, 79, 177, 0.1);
+    color: white;
+
+    margin: auto;
+
+}
+
+#titulo_tabela {
+    color: #37bcd6;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    white-space: nowrap;
+
+    margin: auto;
+    text-align: center;
+}
+
+#tabela_planos th, 
+#tabela_planos td {
+    padding: 15px;
+    border: 1px solid #00B4D8;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#tabela_planos th {
+    background-color: #05283B;
+    color: #ffffff;
+    font-size: 18px;
+}
 
 
+#tabela_planos td:first-child {
+    text-align: left;
+    color: #ffffff;
+    font-weight: 500;
+}
 
 .roda_pe {
     width: 100%;
@@ -230,7 +274,7 @@ body {
     text-align: right;
     padding: 20px;
     margin: auto;
-    color: #A0AEC0;
+    color: #A0AEC0; 
 }
 
 .contato h3 {
@@ -242,14 +286,6 @@ body {
     .cards {
         grid-template-columns: 1fr 1fr; 
     }
-    
-    .cards_3 {
-        grid-template-columns: 1fr 1fr; 
-    }
-
-    .container_projetos {
-        grid-template-columns: 1fr; 
-    }
 }
 
 @media (max-width: 768px) {
@@ -257,40 +293,21 @@ body {
         flex-direction: column; 
         text-align: center;
         gap: 15px;
+        height: auto;
     }
     
-    .cabecalho a, .inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn {
+    .cabecalho a, .inicioBtn, .dashboardBtn, .suporteBtn, .planosBtn, .servicosBtn, .sobreBtn, .midiasBtn, .entrarBtn {
         margin: 5px 0;
         font-size: 20px;
+        display: block; 
     }
     
     .logo-grupo {
         margin-bottom: 15px;
     }
 
-    .cards, .cards_3 {
+    .cards {
         grid-template-columns: 1fr; 
-    }
-
-    .status-blindagem {
-        grid-template-columns: 1fr; 
-    }
-
-    .conteudo-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .escritas_vr, .escritas_vd {
-        text-align: center;
-    }
-
-    .pc h1 {
-        font-size: 32px;
-    }
-
-    .meio_escritas h2 {
-        font-size: 32px;
     }
 
     .roda_pe {
