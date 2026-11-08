@@ -108,6 +108,145 @@ body {
     margin-left: 10px;
 }
 
+.titulo h1{
+    font-size: 40px;
+    text-align: center;
+
+    color: #37bcd6;
+
+    margin: 15px;
+}
+
+.titulo p {
+    color: #A0AEC0;
+    font-size: 20px;   
+
+    text-align: center;
+    margin: 10px;
+
+}
+
+.historia h2 {
+    font-size: 30px;
+    text-align: center;
+
+    color: white;
+
+    margin: 15px;
+}
+
+.historia p {
+    font-size: 15px;
+    text-align: center;
+
+    color: #A0AEC0;
+
+    margin: 15px;
+}
+
+#titulo_card {
+        font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 15px
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%; 
+    min-height: 278px;
+
+    gap: 30px;
+    margin: auto; 
+}
+
+#card1, #card2, #card3{
+    width: 100%; 
+    min-height: 278px;
+    
+    background-color: rgba(0, 180, 216, 0.1); 
+}
+
+.cards h2{
+    font-size: 20px;
+    text-align: center;
+
+    color: white;
+
+    margin: 15px;
+}
+
+#card1 img, #card2 img, #card3 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    padding: 10px;
+    background: #152445;
+}
+
+#card1 p, #card2 p, #card3 p {
+    font-size: 15px;
+    text-align: center;
+
+    color: #A0AEC0;
+
+    margin: 15px;
+}
+
+.membros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.membro1, .membro2 {
+    width: 100%; 
+    min-width: 200px;
+    min-height: 278px;
+    
+    display: grid;
+    grid-template-columns: (4fr, 1fr);
+
+    margin: 20px;
+    border: 1px solid #1c3771;
+    background-color: rgba(0, 180, 216, 0.1);
+    border-radius: 40px; 
+}
+
+.membro1 img, .membro2 img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+
+}
+
+.membro1 a, .membro2 a {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+
+    cursor: pointer;
+
+}
+
+.membro1 h2, .membro2 h2 {
+    text-align: center;
+    color: white;
+
+}
+
+.membro1 p, .membro2 p {
+    text-align: center;
+    color: #37bcd6;
+
+}
+
+
 .roda_pe {
     width: 100%;
     min-height: 296px;
@@ -171,14 +310,6 @@ body {
     .cards {
         grid-template-columns: 1fr 1fr; 
     }
-    
-    .cards_3 {
-        grid-template-columns: 1fr 1fr; 
-    }
-
-    .container_projetos {
-        grid-template-columns: 1fr; 
-    }
 }
 
 @media (max-width: 768px) {
@@ -188,7 +319,7 @@ body {
         gap: 15px;
     }
     
-    .cabecalho a, .inicioBtn, .dashboardBtn, .suporteBtn, .entrarBtn {
+    .cabecalho a, .inicioBtn, .dashboardBtn, .suporteBtn, .planosBtn, .servicosBtn, .sobreBtn, .midiasBtn {
         margin: 5px 0;
         font-size: 20px;
     }
@@ -197,29 +328,14 @@ body {
         margin-bottom: 15px;
     }
 
-    .cards, .cards_3 {
+    .cards {
         grid-template-columns: 1fr; 
     }
 
-    .status-blindagem {
-        grid-template-columns: 1fr; 
-    }
-
-    .conteudo-card {
+    .botao_alternar {
         grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .escritas_vr, .escritas_vd {
-        text-align: center;
-    }
-
-    .pc h1 {
-        font-size: 32px;
-    }
-
-    .meio_escritas h2 {
-        font-size: 32px;
+        height: auto; 
+        gap: 10px;
     }
 
     .roda_pe {

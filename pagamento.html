@@ -20,77 +20,83 @@
                 <a href="servicos.html" class="servicosBtn">Serviços</a>
                 <a href="sobre.html" class="sobreBtn">Sobre Nós</a>
                 <a href="midias.html" class="midiasBtn">Mídias</a>
-                <button type="button" class="entrarBtn">Entrar</button>
+                <a href="entrar.html" class="entrarBtn">Entrar</a>
             </nav>
         </header> 
         <main class="container">
             <section class="titulo">
                 <h1>Checkout seguro</h1>
                 <p>Finalize a contratação do serviço de proteção digital parabellum-tech!</p>
+                <h2>Método de pagamento</h2>
             </section>
-            <form class="container_pagamento">
 
-                <div class="container_dados">
-                    <h2>Método de pagamento</h2>
-                    <div class="pagamento_cards">
-                        <div class="cartao_credito">
-                            <img src="img/cartao_credito.svg">
-                            <p>Cartão de credito</p>
-                        </div>
-                        <div class="cartao">
-                            <img src="img/pix.svg">
-                            <p>Cartão de credito</p>
-                        </div>
-                        <div class="cartao">
-                            <img src="img/cartao_credito.svg">
-                            <p>Cartão de debito</p>
+            <section class="caixas">
+                <form class="container_pagamento">
+                        <div class="pagamento_cards">
+                            <div class="cartao_credito">
+                                <img src="img/cartao_credito.svg">
+                                <p>Cartão de credito</p>
+                            </div>
+                            <div class="pix">
+                                <img src="img/pix.svg">
+                                <p>Cartão de credito</p>
+                            </div>
+                            <div class="cartao_debito">
+                                <img src="img/cartao_credito.svg">
+                                <p>Cartão de debito</p>
+                            </div>
                         </div>
 
-                        <label for="nome">Nome do titular</label>
-                        <div class="nome">
-                            <input type="text" id="nome" placeholder="João da Silva" required>
+                        <div class="informacao">
+
+                            <label for="nome">Nome do titular</label>
+                            <div class="nome">
+                                <input type="text" id="nome" placeholder="João da Silva" required minlength="5">
+                            </div>
+                            <label for="numero">Numero do cartão</label>
+                            <div class="numero">
+                                <input type="text" id="numero" placeholder="9999 8888 7777 6666 5555" required minlength="16" title="Apenas números">
+                            </div>
+                            <label for="validade">Validade</label>
+                            <div class="validade">
+                                <input type="text" id="validade" placeholder="02/33" required minlength="5" maxlength="5">
+                            </div>
+                            <label for="cvv">CVV</label>
+                            <div class="cvv">
+                                <input type="text" id="nome" placeholder="333" required minlength="3" maxlength="4">
+                            </div>
+                            <label for="identidade">CPF/CNPJ do titular</label>
+                            <div class="identidade">
+                                <input type="text" id="identidade" placeholder="Insira sua identificação" required>
+                            </div>
+                            <button type="submit" class="enviar_btn">Confirmar pagamento e ativar blindagem digital</button>
+                            
                         </div>
-                        <label for="nome">Numero do cartão</label>
-                        <div class="numero">
-                            <input type="text" id="numero" placeholder="9999 8888 7777 6666 5555" required>
-                        </div>
-                        <label for="validade">Validade</label>
-                        <div class="validade">
-                            <input type="text" id="validade" placeholder="02/33" required>
-                        </div>
-                        <label for="cvv">CVV</label>
-                        <div class="cvv">
-                            <input type="text" id="nome" placeholder="333" required>
-                        </div>
-                        <label for="nome">CPF/CNPJ do titular</label>
-                        <div class="identidade">
-                            <input type="text" id="identidade" placeholder="Insira sua identificação" required>
-                        </div>
-                        <button type="submit" class="submit_btn">Confirmar pagamento e ativar blindagem digital</button>
-               
+                </form>
+                
+                <section class="plano_escolhido">
+                    <div class="titulo_plano">
+                        <span class="plano_selecionado">Plano pro</span>
+                        <h2>R$ 1.2999/Mês</h2>
                     </div>
-                </div>
-            </form>
+                    
+                    <div class="beneficios">
+                        <ul>
+                            <li>Monitoramento 24/7</li>
+                            <li>Varredura OWASP</li>
+                            <li>Suporte Prioritário</li>
+                            <li>Adequação visual a LGPD/GDPR</li>
+                        </ul>
+                    </div>
 
-            <section class="plano_escolhido">
-                <div class="titulo_plano">
-                    <span>Plano pro</span>
-                    <h2>R$ 1.2999/Mês</h2>
+                <div class="imagem">
+                    <img src="img/blindagem_ativa.jfif">
                 </div>
-
-                <div class="beneficios">
-                    <ul>
-                        <li>Monitoramento 24/7</li>
-                        <li>Varredura OWASP</li>
-                        <li>Suporte Prioritário</li>
-                        <li>Adequação visual a LGPD/GDPR</li>
-                    </ul>
-                </div>
-                <p>Total Mensal: R$ 1.299,00</p>
+                </section>
             </section>
-
-        </main>
-        <footer class="roda_pe">
+                
+            </main>
+            <footer class="roda_pe">
             <h2>Proteção digital de ponta a ponta. Transformamos sua presença online
                 <br> 
                 em uma fortaleza impenetrável com design excepcional.
@@ -103,6 +109,8 @@
                 <a href="servicos.html" class="servicosBtn">Serviços</a>
                 <a href="sobre.html" class="sobreBtn">Sobre Nós</a>
                 <a href="midias.html" class="midiasBtn">Mídias</a>
+            </div>
+
             <div class="contato">
                 <h3>Contato</h3>
                 <br>

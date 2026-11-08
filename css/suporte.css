@@ -245,7 +245,7 @@ body {
     resize: vertical;
 }
 
-.submit_btn {
+.enviar_btn {
     width: 100%;
     background-color: #0099B8;
     color: #FFFFFF;
@@ -258,7 +258,7 @@ body {
     transition: background 0.2s;
 }
 
-.submit_btn:hover {
+.enviar_btn:hover {
     background-color: #00B4D8;
 }
 
