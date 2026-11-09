@@ -486,11 +486,7 @@ body {
     }
     
     .containers2 {
-        grid-template-columns: 1fr; 
-    }
-    
-    .retangulo1 p, .retangulo2 p, .retangulo3 p, .retangulo4 p {
-        margin-left: 10px;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -525,6 +521,7 @@ body {
     .retangulo1, .retangulo2, .retangulo3, .retangulo4 {
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
 
     .retangulo1 img, .retangulo2 img, .retangulo3 img, .retangulo4 img {

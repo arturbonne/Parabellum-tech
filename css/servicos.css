@@ -165,7 +165,11 @@ ul{
 }
 
 
-.cards button {
+ .solicitar {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
     width: 100%;
     min-height: 35px;
     background-color: #0099B8;
@@ -176,13 +180,12 @@ ul{
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s;
-    margin: 25px 0px;
+    margin: 30px 0px;
 }
 
-.cards button:hover {
+.solicitar:hover {
     background-color: #00B4D8;
 }
-
 
 .titulo h2{
     font-size: 40px;
@@ -216,25 +219,34 @@ ul{
 }
 
 .vulneravel  {
-    background-color:#00B4D8;
+    background-color:transparent;
+    color: #FFFFFF;
 }
+.protegido  {
+    background-color:transparent;
+    color: #FFFFFF;
+}
+
 
 .vulneravel, .protegido {
     font-size: 20px;
     color: white;
     border: 1px solid #1c3771;
     cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-
 }
 
 .protegido {
      background-color: transparent;
 }
 
-.protegido:hover {
+.protegido:hover, .vulneravel:hover {
     transition: background 0.2s;
     background-color: #015d70
+}
+
+.botao_ativo {
+    background-color: #00B4D8 !important;
+    color: #FFFFFF;
 }
 
 .card_status1, .card_status2 {

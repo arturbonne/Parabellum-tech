@@ -212,6 +212,47 @@
         background-color: #00B4D8;
     }
 
+.ticket_form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form_row_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form_group label {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input_field, .select_field, .textarea_field {
+    width: 100%;
+    background-color: #082235;
+    border: 1px solid #00D4FF;
+    border-radius: 6px;
+    padding: 12px;
+    color: #A0AEC0;
+    font-size: 14px;
+    outline: none;
+}
+
+.textarea_field {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
     .plano_selecionado {
     font-size: 24px;
     font-weight: 700;
@@ -227,6 +268,14 @@
     line-height: 30px;
 
     color: #A0AEC0;
+    }
+
+    .ul2, .ul3 {
+        display: none;
+    }
+
+    .plano_escolhido h3, h4 {
+        display: none;
     }
 
     .imagem img {

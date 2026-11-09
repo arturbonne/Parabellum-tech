@@ -145,6 +145,10 @@ body {
 }
 
 .servicoBtn {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
     min-width: 201px;
     min-height: 54px;
     background-color: #00B4D8;
@@ -160,7 +164,11 @@ body {
     filter: brightness(0.9);
 }
 
-.portfolioBtn {
+.botao_planos {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
     min-width: 201px;
     min-height: 54px;
     background-color: #2C2C2C;
@@ -171,8 +179,8 @@ body {
     cursor: pointer;
 }
 
-.portfolioBtn:hover {
-    background-color: #3f444c;
+.botao_planos:hover {
+background-color: #316fc5;
     filter: brightness(0.9);
 }
 
@@ -410,10 +418,11 @@ body {
     outline: none;
 }
 
-.container_roi h3, .container_roi h4, .container_roi h5 {
+.container_roi h2, .container_roi h3, .container_roi h4 {
     color: #ffffff;
     font-size: 20px;
     margin-left: 20px;
+    text-align:center;  
 }
 
 .container_calculo {
@@ -424,7 +433,7 @@ body {
     border: 1px solid #00B4D8;
 }
 
-.calcular {
+#calcular {
     background-color: #00B4D8;
     font-size: 20px;
     padding: 10px;
@@ -439,7 +448,7 @@ body {
     transition: 0.3s;
 }
 
-.resultado {
+#resultado {
     flex-direction: column;
     align-items: center;
     display: none;
@@ -452,19 +461,22 @@ body {
     padding: 20px;
 }
 
-.resultado p {
+#resultado p {
     color: #808080;
     font-size: 20px;
     text-align: center;
 }
 
-.resultado span {
+#resultado span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #5df196;
     font-size: 40px;
     font-weight: 800;
 }
 
-.calcular:hover {
+#calcular:hover {
     background-color: #316fc5;
     filter: brightness(0.9); 
 }
@@ -483,7 +495,7 @@ body {
     background-color: rgba(0, 180, 216, 0.1); 
 } 
 
-.cards_3 h6 {
+.cards_3 h2, h3, h4 {
     color: #ffffff;
     font-size: 22px;
     text-align: center;

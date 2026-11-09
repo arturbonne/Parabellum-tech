@@ -165,7 +165,11 @@ body {
     margin: auto;
  }
 
- .cards button {
+ .acessar {
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
     width: 100%;
     min-height: 35px;
     background-color: #0099B8;
@@ -176,13 +180,12 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s;
-    margin-top: 40px;
+    margin: 30px 0px;
 }
 
-.cards button:hover {
+.acessar:hover {
     background-color: #00B4D8;
 }
-
 
 .roda_pe {
     width: 100%;
