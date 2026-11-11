@@ -77,7 +77,6 @@
                                 <div class="form_group">
                                     <label for="prioridade">Prioridade</label>
                                     <select id="prioridade" class="select_field">
-                                        <option>Urgente</option>
                                         <option>Alta</option>
                                         <option>Média</option>
                                         <option>Baixa</option>
@@ -104,7 +103,7 @@
                                 <textarea id="assunto" placeholder="Descreva detalhadamente seu problema" class="textarea_field" required></textarea>
                             </div>
 
-                            <button type="submit" class="enviar_btn">Enviar Ticket</button>
+                            <button type="submit" class="enviar_btn" id="enviar_btn">Enviar Ticket</button>
                         </form>
                     </div>
 
@@ -113,44 +112,21 @@
                             <img src="img/File.svg" alt="Ícone de arquivo">
                             <h2>Meus Tickets</h2>
                         </div>
-
+                        
                         <div class="tickets_list">
-                            <div class="ticket_card">
+                            <div class="ticket_novo" id="ticket_novo">
                                 <div class="ticket_top">
-                                    <span class="ticket_id">#TK-2847</span>
-                                    <span class="badge badge_alta">Alta</span>
+                                    <span class="ticket_id">#TK-2832</span>
+                                    <span class="badge badge_media" id="span_badge">--</span>
                                 </div>
-                                <h3 class="ticket_title">Atualização de certificado SSL</h3>
+                                <span class="ticket_title" id="span_titulo_ticket">--</span>
                                 <div class="ticket_bottom">
-                                    <span class="status_dot dot_yellow">● Em andamento</span>
-                                    <span class="ticket_time">Atualizado 2h atrás</span>
+                                    <h2 class="status_dot dot_blue">● Ticket Novo </h2>
+                                    <h3 class="ticket_time">Novo</h3>
                                 </div>
                             </div>
-
-                            <div class="ticket_card">
-                                <div class="ticket_top">
-                                    <span class="ticket_id">#TK-2831</span>
-                                    <span class="badge badge_media">Média</span>
-                                </div>
-                                <h3 class="ticket_title">Dúvida sobre relatório de pentest</h3>
-                                <div class="ticket_bottom">
-                                    <span class="status_dot dot_blue">● Aguardando Resposta</span>
-                                    <span class="ticket_time">Atualizado 1d atrás</span>
-                                </div>
-                            </div>
-
-                            <div class="ticket_card">
-                                <div class="ticket_top">
-                                    <span class="ticket_id">#TK-2809</span>
-                                    <span class="badge badge_baixa">Baixa</span>
-                                </div>
-                                <h3 class="ticket_title">Solicitação de nova funcionalidade</h3>
-                                <div class="ticket_bottom">
-                                    <span class="status_dot dot_green">● Resolvido</span>
-                                    <span class="ticket_time">Atualizado 5d atrás</span>
-                                </div>
-                            </div>
-                        </div>
+                            
+                            
                     </div>
                 </section>
             </section>
@@ -216,6 +192,6 @@
                 <p>+55 (11) 9988-7766</p>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script src="js/envio_ticket.js"></script>
     </body>
 </html>
