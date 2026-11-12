@@ -259,16 +259,25 @@
     resize: vertical;
 }
 
-
     .plano_selecionado {
     font-size: 24px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    display: block;             
-    text-align: center;
-    margin: 10px;
+
+
+
+    
     }
+        
+    .plano_escolhido h3, h4 {
+        display: none;
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+    
+        color: #37bcd6;
+        }                                               
 
     ul{
     margin: 20px 30px;
@@ -281,21 +290,9 @@
         display: none;
     }
 
-    .plano_escolhido h3, h4 {
-        display: none;
-        font-size: 40px;
-        text-align: center;
-        margin: 10px;
-
-        color: #37bcd6;
-    }
-
     .imagem img {
-        border-radius: 50%;
         width: 100%;
-        height: auto;
-        object-fit: contain;
-        margin: auto;
+        height: auto;        
     }
     
 
