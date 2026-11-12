@@ -141,6 +141,13 @@
 
         cursor: pointer;
     }
+    
+    .botao_ativo {
+    background-color: transparent;
+    background-color: #004d56;
+    border: 1px solid #00d2ff;
+     }
+
 
     .cartao_credito, .pix, .cartao_debito {
         display: flex;
@@ -276,6 +283,11 @@
 
     .plano_escolhido h3, h4 {
         display: none;
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+
+        color: #37bcd6;
     }
 
     .imagem img {
@@ -286,6 +298,7 @@
         margin: auto;
     }
     
+
     .roda_pe {
         width: 100%;
         min-height: 296px;

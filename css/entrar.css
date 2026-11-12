@@ -198,9 +198,7 @@ h2 {
     min-width: 32px;
     min-height: 30px;
 
-    cursor: pointer;
-
-    
+    cursor: pointer;    
  }
 
  .botao_lembrar button:hover{
@@ -424,6 +422,7 @@ h2 {
  .entrar_botao:hover {
     background-color: #00B4D8;
 }
+
 
 
  @media (max-width: 768px) {
